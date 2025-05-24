@@ -4,6 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Student Testimonials</title>
+  <style>
+    .testimonial-slider-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .testimonial-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+      padding: 1rem;
+      text-align: left;
+      transition: transform 0.3s ease;
+      flex: 0 0 auto;
+    }
+    @media (max-width: 768px) {
+      .testimonial-slider-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      /* Optional: hide scrollbar */
+      .testimonial-slider-container::-webkit-scrollbar {
+        display: none;
+      }
+      .testimonial-slider-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    }
+  </style>
 </head>
 <body style="margin: 0; font-family: 'Segoe UI', sans-serif; background-color: transparent; color: #212529;">
 
@@ -13,10 +46,10 @@
       Join us today and take a step closer to your dream B-School!
     </p>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+    <div class="testimonial-slider-container">
 
       <!-- Card 1 -->
-      <div style="background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 320px; padding: 1rem; text-align: left; transition: transform 0.3s ease;">
+      <div class="testimonial-card">
         <video controls poster="images/ckt1.jpg" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
           <source src="video/vt1.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -27,7 +60,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div style="background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 320px; padding: 1rem; text-align: left; transition: transform 0.3s ease;">
+      <div class="testimonial-card">
         <video controls poster="images/kyt2.jpg" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
           <source src="video/vt2.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -38,7 +71,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div style="background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 320px; padding: 1rem; text-align: left; transition: transform 0.3s ease;">
+      <div class="testimonial-card">
         <video controls poster="images/ast3.jpg" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
           <source src="video/vt3.mp4" type="video/mp4">
           Your browser does not support the video tag.

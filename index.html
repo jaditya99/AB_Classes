@@ -32,6 +32,12 @@
                 width: 100% !important;
             }
 
+            iframe[src="data.html"] {
+                height: 400px !important;
+                margin-top: 5px !important;
+                margin-bottom: 5px !important;
+            }
+
             /* Fix Why AB CLASSES banner */
             div[style*="background-color: #FF0000; padding: 20px; text-align: center;"] {
                 padding: 15px 10px !important;
@@ -153,6 +159,12 @@
                 max-width: 100% !important;
                 margin-bottom: 20px;
             }
+
+            .data-html-iframe-mobile { /* Styles for the data.html iframe on mobile */
+                margin-top: 0 !important; /* Remove excessive top margin from mt-10 */
+                height: 320px !important; /* Adjusted height to fit data.html's mobile content */
+            }
+
         }
 
         @media (max-width: 480px) {
@@ -419,7 +431,7 @@
     </div>
 
     <!-- Features Section -->
-    <div style="background-color: #FF0000; padding: 20px; text-align: center;">
+    <div class="bg-red-section" style="padding: 20px; text-align: center;">
         <span style="white-space: nowrap; color: white; font-size: 28px; font-weight: 800;">
           Why AB CLASSES is the Right Choice For Cat – Hear From Rankers!
         </span>
@@ -478,6 +490,10 @@
                 width: 80% !important;
                 max-width: 300px !important;
                 margin: 0 auto !important;
+            }
+            /* Remove red background on mobile for the data section */
+            .bg-red-100 {
+                background-color: transparent !important;
             }
         }
     </style>

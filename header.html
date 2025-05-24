@@ -31,85 +31,45 @@
     </div>
 
     <!-- Hamburger Icon -->
-    <div class="sm:hidden">
-      <button id="menu-toggle" class="focus:outline-none text-white text-2xl">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
+    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-white hover:text-gray-300 focus:outline-none focus:ring-2 focus:ring-white rounded" id="mobile-menu-button">
+      <i class="fas fa-bars fa-lg"></i>
+    </button>
   </div>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="sm:hidden hidden px-4 pb-4 bg-[#005f73]">
-    <div class="flex flex-col space-y-2">
-      <a href="index.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">Home</a>
-      
-      <div class="dropdown">
-        <button class="dropdown-btn text-white py-2 px-4 rounded-md hover:bg-[#0a9396] w-full text-left flex justify-between items-center">
-          Courses <i class="fas fa-chevron-down"></i>
-        </button>
-        <div class="dropdown-content hidden pl-4">
-          <a href="cat.html" class="block text-white py-2 hover:bg-[#0a9396]">CAT Preparation</a>
-          <a href="mba.html" class="block text-white py-2 hover:bg-[#0a9396]">MBA Entrance</a>
-          <a href="clat.html" class="block text-white py-2 hover:bg-[#0a9396]">CLAT Preparation</a>
-        </div>
-      </div>
-      
-      <a href="results.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">Results</a>
-      <a href="about.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">About Us</a>
-      <a href="contact.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">Contact</a>
-      
-      <a href="https://api.whatsapp.com/send?phone=919827118488&amp;text=I%20want%20to%20enquire%20about%20AB%20Classes"
-         class="block bg-white text-[#005f73] py-2 px-4 rounded-md mt-2 text-center transition duration-300 hover:bg-gray-600 hover:text-white"
-         target="_blank">
-        <i class="fab fa-whatsapp mr-1"></i> WhatsApp
-      </a>
-      <a href="https://website-6ig.pages.dev/registration"
-         class="block bg-white text-[#005f73] py-2 px-4 rounded-md text-center transition duration-300 hover:bg-gray-600 hover:text-white">
-        Get Started
-      </a>
-    </div>
-  </div>
-
-  <style>
-    .dropdown-btn {
-      transition: all 0.3s ease;
-    }
-    .dropdown-btn.active {
-      background-color: #0a9396;
-    }
-    .dropdown-btn.active i {
-      transform: rotate(180deg);
-    }
-    .dropdown-content {
-      transition: max-height 0.3s ease;
-      max-height: 0;
-      overflow: hidden;
-    }
-    .dropdown-content.show {
-      max-height: 500px;
-    }
-  </style>
+  <!-- Mobile menu -->
+  <nav aria-label="Mobile menu" class="hidden md:hidden bg-[#005f73] border-t border-gray-200" id="mobile-menu">
+    <a href="index.html" class="block px-6 py-3 border-b border-gray-200 hover:bg-[#0a9396] hover:text-white font-semibold transition">Home</a>
+    <a href="cd.html" class="block px-6 py-3 border-b border-gray-200 hover:bg-[#0a9396] hover:text-white font-semibold transition">Courses</a>
+    <a href="#why-choose-title" class="block px-6 py-3 border-b border-gray-200 hover:bg-[#0a9396] hover:text-white font-semibold transition">Why Choose Us</a>
+    <a href="https://api.whatsapp.com/send?phone=919827118488&amp;text=I%20want%20to%20enquire%20about%20AB%20Classes" class="block px-6 py-3 hover:bg-[#0a9396] hover:text-white font-semibold transition">Contact</a>
+  </nav>
 
   <script>
-    document.querySelectorAll('.dropdown-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        this.classList.toggle('active');
-        const content = this.nextElementSibling;
-        content.classList.toggle('show');
-      });
+    const mobileMenuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    mobileMenuButton.addEventListener("click", () => {
+      const expanded = mobileMenuButton.getAttribute("aria-expanded") === "true" || false;
+      mobileMenuButton.setAttribute("aria-expanded", !expanded);
+      if (mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenuButton.innerHTML = '<i class="fas fa-times fa-lg"></i>';
+      } else {
+        mobileMenu.classList.add("hidden");
+        mobileMenuButton.innerHTML = '<i class="fas fa-bars fa-lg"></i>';
+      }
     });
   </script>
+
+  <style>
+  </style>
+
 </header>
-
-<!-- Script to toggle mobile menu -->
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  toggle.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
 
 </body>
 </html>
+
+ </style>
+ 
+ </body>
+ </html>

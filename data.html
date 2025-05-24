@@ -55,10 +55,146 @@
       font-size: 1.5rem;
       box-shadow: 0 4px 6px rgb(217 74 61 / 0.4);
     }
+
+    /* Animation keyframes */
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    /* Mobile only animation container */
+    @media (max-width: 639px) {
+      body {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        background: transparent !important;
+      }
+      .stat-cards-container {
+        position: relative;
+        height: 280px; /* slightly reduced height */
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .stat-card {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 400px;
+        opacity: 0;
+        pointer-events: none;
+        animation-name: fadeInOut;
+        animation-duration: 16s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        padding: 2rem 2rem 1rem 2rem; /* reduced vertical padding */
+        background: white !important;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+      }
+      /* Each card gets a different animation delay to appear one after another */
+      .stat-card:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .stat-card:nth-child(2) {
+        animation-delay: 2s;
+      }
+      .stat-card:nth-child(3) {
+        animation-delay: 4s;
+      }
+      .stat-card:nth-child(4) {
+        animation-delay: 6s;
+      }
+      .stat-card:nth-child(5) {
+        animation-delay: 8s;
+      }
+      .stat-card:nth-child(6) {
+        animation-delay: 10s;
+      }
+      /* Hide Years of Excellence and Student Satisfaction Rate on mobile */
+      .stat-card:nth-child(7),
+      .stat-card:nth-child(8) {
+        display: none !important;
+      }
+      /* Hide header and paragraph on mobile */
+      .header-container {
+        display: none;
+      }
+      .stat-number {
+        font-size: 3rem;
+      }
+      .stat-description {
+        font-size: 1rem;
+        margin-top: 0.25rem;
+      }
+      .icon-circle {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+      }
+    }
+
+    /* On larger screens, show all cards normally */
+    @media (min-width: 640px) {
+      body {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        padding-left: 24px;
+        padding-right: 24px;
+        background: #f9fafb !important;
+      }
+      .stat-cards-container {
+        height: auto !important;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .stat-card {
+        position: static !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        animation: none !important;
+        width: auto !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 2rem;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+          0 4px 6px -4px rgb(0 0 0 / 0.1);
+      }
+      .header-container {
+        display: block;
+      }
+      .stat-number {
+        font-size: 3.5rem;
+      }
+      .stat-description {
+        font-size: 1.125rem;
+        margin-top: 0.5rem;
+      }
+      .icon-circle {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
   </style>
 </head>
-<body class="py-16 px-6">
-  <div class="max-w-7xl mx-auto text-center mb-16 px-4">
+<body class="px-6">
+  <div class="header-container max-w-7xl mx-auto text-center mb-16 px-4">
     <h1 class="text-4xl font-extrabold text-[#121826] max-w-3xl mx-auto leading-tight">
       Transforming Learning Outcomes with Proven Results
     </h1>
@@ -67,43 +203,43 @@
     </p>
   </div>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+  <div class="stat-cards-container max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-user-graduate"></i></div>
       <p class="stat-number">2500+</p>
       <p class="stat-description">Students Enrolled</p>
     </div>
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-video"></i></div>
       <p class="stat-number">1500+</p>
       <p class="stat-description">Hours of Video Content</p>
     </div>
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-file-alt"></i></div>
       <p class="stat-number">25000+</p>
       <p class="stat-description">Mock Tests Taken</p>
     </div>
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-chart-line"></i></div>
       <p class="stat-number">98%</p>
       <p class="stat-description">Average Improvement Rate</p>
     </div>
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-briefcase"></i></div>
       <p class="stat-number">2500+</p>
-      <p class="stat-description">IIMs Calls </p>
+      <p class="stat-description">IIMs Calls</p>
     </div>
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-comments"></i></div>
       <p class="stat-number">150+</p>
       <p class="stat-description">Live Interactive Sessions</p>
     </div>
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-award"></i></div>
       <p class="stat-number">10+</p>
       <p class="stat-description">Years of Excellence</p>
     </div>
-    <div class="stat-card p-8 flex flex-col items-center text-center">
+    <div class="stat-card flex flex-col items-center text-center">
       <div class="icon-circle"><i class="fas fa-smile"></i></div>
       <p class="stat-number">99%</p>
       <p class="stat-description">Student Satisfaction Rate</p>
