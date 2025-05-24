@@ -59,8 +59,9 @@
     /* Animation keyframes */
     @keyframes fadeInOut {
       0% { opacity: 0; }
-      10% { opacity: 1; }
-      90% { opacity: 1; }
+      12.5% { opacity: 1; }
+      37.5% { opacity: 1; }
+      50% { opacity: 0; }
       100% { opacity: 0; }
     }
 
@@ -92,9 +93,9 @@
         opacity: 0;
         pointer-events: none;
         animation-name: fadeInOut;
-        animation-duration: 16s;
+        animation-duration: 12s;
         animation-iteration-count: infinite;
-        animation-fill-mode: forwards;
+        animation-fill-mode: none;
         padding: 2rem 2rem 1rem 2rem; /* reduced vertical padding */
         background: white !important;
         box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),

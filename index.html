@@ -32,6 +32,19 @@
                 width: 100% !important;
             }
 
+            /* Increase size of image-container and image on mobile view */
+            @media (max-width: 639px) {
+                .image-container {
+                    height: 500px !important;
+                    max-width: 100% !important;
+                }
+                .image-container .carousel img {
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                }
+            }
+
             iframe[src="data.html"] {
                 height: 400px !important;
                 margin-top: 5px !important;
