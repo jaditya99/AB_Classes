@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Testimonials</title>
+</head>
+<body style="margin: 0; font-family: 'Segoe UI', sans-serif; background-color: transparent; color: #212529;">
+
+  <section style="text-align: center; padding: 3rem 1rem; max-width: 1200px; margin: auto;">
+    <h2 style="font-size: 2rem; color: #1a1a1a;">Real Stories, Real Success!</h2>
+    <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #444;">
+      Join us today and take a step closer to your dream B-School!
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+
+      <!-- Card 1 -->
+      <div style="background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 320px; padding: 1rem; text-align: left; transition: transform 0.3s ease;">
+        <video controls poster="images/ckt1.jpg" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+          <source src="video/vt1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div style="margin-top: 1rem;">
+          <p style="font-weight: bold; color: #000000;">Chahak Kedia - CAT 99.76%ile</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 320px; padding: 1rem; text-align: left; transition: transform 0.3s ease;">
+        <video controls poster="images/kyt2.jpg" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+          <source src="video/vt2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div style="margin-top: 1rem;">
+          <p style="font-weight: bold; color: #000000;">Kritika Yadav - CAT 99.31%ile</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background-color: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 320px; padding: 1rem; text-align: left; transition: transform 0.3s ease;">
+        <video controls poster="images/ast3.jpg" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;">
+          <source src="video/vt3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div style="margin-top: 1rem;">
+          <p style="font-weight: bold; color: #000000;">Ananya Shivhare - XLRI-J 2024 Convert</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('video').forEach(video => {
+      video.addEventListener('pause', () => {
+        if (!video.ended) {
+          video.currentTime = 0;
+          setTimeout(() => video.load(), 10);
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

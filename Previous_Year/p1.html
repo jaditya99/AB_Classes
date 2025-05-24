@@ -1,0 +1,1095 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Previous Papers - AB Classes
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+   /* Keep dropdown open on hover and focus */
+   .dropdown:hover > .dropdown-menu,
+   .dropdown:focus-within > .dropdown-menu {
+     opacity: 1 !important;
+     pointer-events: auto !important;
+     transform: translateY(0) !important;
+   }
+   /* Transition for dropdown */
+   .dropdown-menu {
+     transition: opacity 0.2s ease, transform 0.2s ease;
+     transform: translateY(0.25rem);
+     max-height: 400px;
+     overflow-y: auto;
+   }
+   /* Scrollbar styling for dropdown */
+   .dropdown-menu::-webkit-scrollbar {
+     width: 6px;
+   }
+   .dropdown-menu::-webkit-scrollbar-thumb {
+     background-color: #FF0000;
+     border-radius: 3px;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+  <header class="bg-white shadow flex-shrink-0">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+     <nav class="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
+      <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="home">
+       Home
+      </a>
+      <div class="relative dropdown">
+       <button aria-haspopup="true" aria-expanded="false" class="flex items-center space-x-1 text-[#FF0000] font-semibold border-b-2 border-[#FF0000] pb-1 focus:outline-none" id="dropdown-button">
+        <span>Previous Papers</span>
+        <i class="fas fa-chevron-down text-sm mt-0.5"></i>
+       </button>
+       <div tabindex="0" class="dropdown-menu absolute left-0 mt-2 w-72 bg-white rounded-md shadow-lg opacity-0 pointer-events-none transform translate-y-1 z-50" id="dropdown-menu">
+        <nav class="flex flex-col py-2 divide-y divide-gray-200 max-h-96 overflow-y-auto">
+         <!-- CAT Previous Papers -->
+         <div class="px-4 py-2">
+          <h3 class="font-semibold text-[#FF0000] mb-2">CAT Previous Papers</h3>
+          <ul class="space-y-1 text-gray-700">
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-previous-papers-2023">2023</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-previous-papers-2022">2022</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-previous-papers-2021">2021</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-previous-papers-2020">2020</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-previous-papers-2019">2019</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-previous-papers-2018">2018</a></li>
+          </ul>
+         </div>
+         <!-- XAT Previous Papers -->
+         <div class="px-4 py-2">
+          <h3 class="font-semibold text-[#FF0000] mb-2">XAT Previous Papers</h3>
+          <ul class="space-y-1 text-gray-700">
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-previous-papers-2023">2023</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-previous-papers-2022">2022</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-previous-papers-2021">2021</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-previous-papers-2020">2020</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-previous-papers-2019">2019</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-previous-papers-2018">2018</a></li>
+          </ul>
+         </div>
+         <!-- CAT VARC Questions -->
+         <div class="px-4 py-2">
+          <h3 class="font-semibold text-[#FF0000] mb-2">CAT VARC Questions</h3>
+          <ul class="space-y-1 text-gray-700">
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-varc-questions-2023">2023</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-varc-questions-2022">2022</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-varc-questions-2021">2021</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-varc-questions-2020">2020</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-varc-questions-2019">2019</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-varc-questions-2018">2018</a></li>
+          </ul>
+         </div>
+         <!-- CAT Quant Questions -->
+         <div class="px-4 py-2">
+          <h3 class="font-semibold text-[#FF0000] mb-2">CAT Quant Questions</h3>
+          <ul class="space-y-1 text-gray-700">
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-quant-questions-2023">2023</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-quant-questions-2022">2022</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-quant-questions-2021">2021</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-quant-questions-2020">2020</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-quant-questions-2019">2019</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-quant-questions-2018">2018</a></li>
+          </ul>
+         </div>
+         <!-- CAT DILR Questions -->
+         <div class="px-4 py-2">
+          <h3 class="font-semibold text-[#FF0000] mb-2">CAT DILR Questions</h3>
+          <ul class="space-y-1 text-gray-700">
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-dilr-questions-2023">2023</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-dilr-questions-2022">2022</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-dilr-questions-2021">2021</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-dilr-questions-2020">2020</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-dilr-questions-2019">2019</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="cat-dilr-questions-2018">2018</a></li>
+          </ul>
+         </div>
+         <!-- XAT DM Practice -->
+         <div class="px-4 py-2">
+          <h3 class="font-semibold text-[#FF0000] mb-2">XAT DM Practice</h3>
+          <ul class="space-y-1 text-gray-700">
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-dm-practice-2023">2023</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-dm-practice-2022">2022</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-dm-practice-2021">2021</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-dm-practice-2020">2020</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-dm-practice-2019">2019</a></li>
+           <li><a class="hover:bg-[#FF0000] hover:text-white transition block px-2 py-1 rounded cursor-pointer" data-page="xat-dm-practice-2018">2018</a></li>
+          </ul>
+         </div>
+        </nav>
+       </div>
+      </div>
+      <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-preparation">
+       CAT Preparation
+      </a>
+      <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-questions">
+       CAT Questions
+      </a>
+      <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="contact">
+       Contact
+      </a>
+     </nav>
+     <button aria-label="Open menu" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#FF0000]" id="mobile-menu-button">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="md:hidden hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <nav class="px-4 py-4 space-y-2">
+     <a class="block text-gray-700 font-medium hover:text-[#FF0000] transition cursor-pointer" data-page="home">
+      Home
+     </a>
+     <details class="group">
+      <summary class="flex items-center justify-between cursor-pointer font-semibold text-[#FF0000] border-l-4 border-[#FF0000] pl-3 py-2">
+       Previous Papers
+       <i class="fas fa-chevron-down transition-transform group-open:rotate-180"></i>
+      </summary>
+      <nav class="flex flex-col pl-6 mt-2 space-y-1 text-gray-700 font-normal max-h-96 overflow-y-auto">
+       <h3 class="font-semibold text-[#FF0000] mb-1">CAT Previous Papers</h3>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-previous-papers-2023">2023</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-previous-papers-2022">2022</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-previous-papers-2021">2021</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-previous-papers-2020">2020</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-previous-papers-2019">2019</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-previous-papers-2018">2018</a>
+
+       <h3 class="font-semibold text-[#FF0000] mt-4 mb-1">XAT Previous Papers</h3>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-previous-papers-2023">2023</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-previous-papers-2022">2022</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-previous-papers-2021">2021</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-previous-papers-2020">2020</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-previous-papers-2019">2019</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-previous-papers-2018">2018</a>
+
+       <h3 class="font-semibold text-[#FF0000] mt-4 mb-1">CAT VARC Questions</h3>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-varc-questions-2023">2023</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-varc-questions-2022">2022</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-varc-questions-2021">2021</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-varc-questions-2020">2020</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-varc-questions-2019">2019</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-varc-questions-2018">2018</a>
+
+       <h3 class="font-semibold text-[#FF0000] mt-4 mb-1">CAT Quant Questions</h3>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-quant-questions-2023">2023</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-quant-questions-2022">2022</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-quant-questions-2021">2021</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-quant-questions-2020">2020</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-quant-questions-2019">2019</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-quant-questions-2018">2018</a>
+
+       <h3 class="font-semibold text-[#FF0000] mt-4 mb-1">CAT DILR Questions</h3>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-dilr-questions-2023">2023</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-dilr-questions-2022">2022</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-dilr-questions-2021">2021</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-dilr-questions-2020">2020</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-dilr-questions-2019">2019</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="cat-dilr-questions-2018">2018</a>
+
+       <h3 class="font-semibold text-[#FF0000] mt-4 mb-1">XAT DM Practice</h3>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-dm-practice-2023">2023</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-dm-practice-2022">2022</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-dm-practice-2021">2021</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-dm-practice-2020">2020</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-dm-practice-2019">2019</a>
+       <a class="hover:text-[#FF0000] transition cursor-pointer" data-page="xat-dm-practice-2018">2018</a>
+      </nav>
+     </details>
+     <a class="block text-gray-700 font-medium hover:text-[#FF0000] transition cursor-pointer" data-page="cat-preparation">
+      CAT Preparation
+     </a>
+     <a class="block text-gray-700 font-medium hover:text-[#FF0000] transition cursor-pointer" data-page="cat-questions">
+      CAT Questions
+     </a>
+     <a class="block text-gray-700 font-medium hover:text-[#FF0000] transition cursor-pointer" data-page="contact">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1" id="content-area">
+   <h1 class="text-3xl font-extrabold text-gray-900 mb-6 text-center md:text-left" id="page-title">
+    Previous Year Question Papers
+   </h1>
+   <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="papers-section">
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+     <h2 class="text-xl font-semibold mb-2">
+      CAT 2023 Question Paper
+     </h2>
+     <p class="text-gray-600 flex-grow">
+      Download the official CAT 2023 question paper with answer key and solutions.
+     </p>
+     <a class="mt-4 inline-block text-center bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition" href="/cat-previous-papers/cat-2023-question-paper" target="_blank" rel="noopener noreferrer">
+      Download PDF
+     </a>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+     <h2 class="text-xl font-semibold mb-2">
+      CAT 2022 Question Paper
+     </h2>
+     <p class="text-gray-600 flex-grow">
+      Access the complete CAT 2022 question paper along with detailed solutions.
+     </p>
+     <a class="mt-4 inline-block text-center bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition" href="/cat-previous-papers/cat-2022-question-paper" target="_blank" rel="noopener noreferrer">
+      Download PDF
+     </a>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+     <h2 class="text-xl font-semibold mb-2">
+      CAT 2021 Question Paper
+     </h2>
+     <p class="text-gray-600 flex-grow">
+      Download the CAT 2021 question paper with answer keys and explanations.
+     </p>
+     <a class="mt-4 inline-block text-center bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition" href="/cat-previous-papers/cat-2021-question-paper" target="_blank" rel="noopener noreferrer">
+      Download PDF
+     </a>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+     <h2 class="text-xl font-semibold mb-2">
+      CAT 2020 Question Paper
+     </h2>
+     <p class="text-gray-600 flex-grow">
+      Get the official CAT 2020 question paper and answer key for practice.
+     </p>
+     <a class="mt-4 inline-block text-center bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition" href="/cat-previous-papers/cat-2020-question-paper" target="_blank" rel="noopener noreferrer">
+      Download PDF
+     </a>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+     <h2 class="text-xl font-semibold mb-2">
+      CAT 2019 Question Paper
+     </h2>
+     <p class="text-gray-600 flex-grow">
+      Practice with the CAT 2019 question paper and detailed solutions.
+     </p>
+     <a class="mt-4 inline-block text-center bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition" href="/cat-previous-papers/cat-2019-question-paper" target="_blank" rel="noopener noreferrer">
+      Download PDF
+     </a>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col">
+     <h2 class="text-xl font-semibold mb-2">
+      CAT 2018 Question Paper
+     </h2>
+     <p class="text-gray-600 flex-grow">
+      Download the CAT 2018 question paper with answer keys and explanations.
+     </p>
+     <a class="mt-4 inline-block text-center bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition" href="/cat-previous-papers/cat-2018-question-paper" target="_blank" rel="noopener noreferrer">
+      Download PDF
+     </a>
+    </article>
+   </section>
+   <section class="mt-16" id="info-section">
+    <h2 class="text-2xl font-bold mb-6 text-center md:text-left" id="info-title">
+     How to Use These Papers
+    </h2>
+    <div class="max-w-4xl mx-auto md:mx-0 text-gray-700 space-y-4 text-center md:text-left px-4 md:px-0" id="info-content">
+     <p>
+      Practicing previous year CAT question papers is one of the best ways to prepare for the exam. It helps you understand the exam pattern, difficulty level, and types of questions asked.
+     </p>
+     <p>
+      Download the papers, attempt them under timed conditions, and then check your answers with the provided solutions to improve your accuracy and speed.
+     </p>
+     <p>
+      Use these papers along with your regular study plan to maximize your CAT preparation.
+     </p>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-white border-t border-gray-200 mt-20 flex-shrink-0">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm">
+    <p>
+     © 2024 AB Classes. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Facebook" class="hover:text-[#FF0000] transition" href="https://facebook.com/abclasses" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-facebook fa-lg">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-[#FF0000] transition" href="https://twitter.com/abclasses" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-twitter fa-lg">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-[#FF0000] transition" href="https://instagram.com/abclasses" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-[#FF0000] transition" href="https://linkedin.com/company/abclasses" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuButton = document.getElementById('mobile-menu-button');
+   const mobileMenu = document.getElementById('mobile-menu');
+   const dropdownButton = document.getElementById('dropdown-button');
+   const dropdownMenu = document.getElementById('dropdown-menu');
+   const navLinks = document.querySelectorAll('nav a[data-page], nav div.dropdown-menu a[data-page]');
+   const mobileLinks = document.querySelectorAll('#mobile-menu a[data-page]');
+   const contentArea = document.getElementById('content-area');
+   const pageTitle = document.getElementById('page-title');
+   const papersSection = document.getElementById('papers-section');
+   const infoSection = document.getElementById('info-section');
+   const infoTitle = document.getElementById('info-title');
+   const infoContent = document.getElementById('info-content');
+
+   // Data for pages with year-wise options
+   const pages = {
+     "home": {
+       title: "Welcome to AB Classes",
+       content: `<div class="bg-white rounded-lg shadow p-6 text-center text-gray-700">
+         <h2 class="text-2xl font-bold mb-4">Welcome to AB Classes</h2>
+         <p>Explore our resources and prepare effectively for your exams.</p>
+       </div>`,
+       papers: null,
+       info: null
+     },
+     // CAT Previous Papers by year
+     "cat-previous-papers-2023": {
+       title: "CAT 2023 Question Paper",
+       papers: [
+         {
+           title: "CAT 2023 Question Paper",
+           desc: "Download the official CAT 2023 question paper with answer key and solutions.",
+           link: "/cat-previous-papers/cat-2023-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use CAT 2023 Paper",
+         content: `<p>Practice the CAT 2023 paper under timed conditions to simulate the exam environment.</p>`
+       }
+     },
+     "cat-previous-papers-2022": {
+       title: "CAT 2022 Question Paper",
+       papers: [
+         {
+           title: "CAT 2022 Question Paper",
+           desc: "Access the complete CAT 2022 question paper along with detailed solutions.",
+           link: "/cat-previous-papers/cat-2022-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use CAT 2022 Paper",
+         content: `<p>Review the solutions carefully to understand the question patterns and difficulty.</p>`
+       }
+     },
+     "cat-previous-papers-2021": {
+       title: "CAT 2021 Question Paper",
+       papers: [
+         {
+           title: "CAT 2021 Question Paper",
+           desc: "Download the CAT 2021 question paper with answer keys and explanations.",
+           link: "/cat-previous-papers/cat-2021-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use CAT 2021 Paper",
+         content: `<p>Focus on weak areas identified while practicing this paper for better preparation.</p>`
+       }
+     },
+     "cat-previous-papers-2020": {
+       title: "CAT 2020 Question Paper",
+       papers: [
+         {
+           title: "CAT 2020 Question Paper",
+           desc: "Get the official CAT 2020 question paper and answer key for practice.",
+           link: "/cat-previous-papers/cat-2020-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use CAT 2020 Paper",
+         content: `<p>Use this paper to improve your speed and accuracy in solving questions.</p>`
+       }
+     },
+     "cat-previous-papers-2019": {
+       title: "CAT 2019 Question Paper",
+       papers: [
+         {
+           title: "CAT 2019 Question Paper",
+           desc: "Practice with the CAT 2019 question paper and detailed solutions.",
+           link: "/cat-previous-papers/cat-2019-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use CAT 2019 Paper",
+         content: `<p>Analyze your performance and work on time management using this paper.</p>`
+       }
+     },
+     "cat-previous-papers-2018": {
+       title: "CAT 2018 Question Paper",
+       papers: [
+         {
+           title: "CAT 2018 Question Paper",
+           desc: "Download the CAT 2018 question paper with answer keys and explanations.",
+           link: "/cat-previous-papers/cat-2018-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use CAT 2018 Paper",
+         content: `<p>Review the question types and practice regularly for best results.</p>`
+       }
+     },
+     // XAT Previous Papers by year
+     "xat-previous-papers-2023": {
+       title: "XAT 2023 Question Paper",
+       papers: [
+         {
+           title: "XAT 2023 Question Paper",
+           desc: "Download the official XAT 2023 question paper with answer key and solutions.",
+           link: "/xat-previous-papers/xat-2023-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use XAT 2023 Paper",
+         content: `<p>Practice XAT 2023 paper to understand the exam pattern and question types.</p>`
+       }
+     },
+     "xat-previous-papers-2022": {
+       title: "XAT 2022 Question Paper",
+       papers: [
+         {
+           title: "XAT 2022 Question Paper",
+           desc: "Access the complete XAT 2022 question paper along with detailed solutions.",
+           link: "/xat-previous-papers/xat-2022-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use XAT 2022 Paper",
+         content: `<p>Analyze your answers and improve your strategy for the exam.</p>`
+       }
+     },
+     "xat-previous-papers-2021": {
+       title: "XAT 2021 Question Paper",
+       papers: [
+         {
+           title: "XAT 2021 Question Paper",
+           desc: "Download the XAT 2021 question paper with answer keys and explanations.",
+           link: "/xat-previous-papers/xat-2021-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use XAT 2021 Paper",
+         content: `<p>Focus on time management and accuracy while practicing this paper.</p>`
+       }
+     },
+     "xat-previous-papers-2020": {
+       title: "XAT 2020 Question Paper",
+       papers: [
+         {
+           title: "XAT 2020 Question Paper",
+           desc: "Get the official XAT 2020 question paper and answer key for practice.",
+           link: "/xat-previous-papers/xat-2020-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use XAT 2020 Paper",
+         content: `<p>Use this paper to identify your strengths and weaknesses.</p>`
+       }
+     },
+     "xat-previous-papers-2019": {
+       title: "XAT 2019 Question Paper",
+       papers: [
+         {
+           title: "XAT 2019 Question Paper",
+           desc: "Practice with the XAT 2019 question paper and detailed solutions.",
+           link: "/xat-previous-papers/xat-2019-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use XAT 2019 Paper",
+         content: `<p>Review your performance and improve your problem-solving skills.</p>`
+       }
+     },
+     "xat-previous-papers-2018": {
+       title: "XAT 2018 Question Paper",
+       papers: [
+         {
+           title: "XAT 2018 Question Paper",
+           desc: "Download the XAT 2018 question paper with answer keys and explanations.",
+           link: "/xat-previous-papers/xat-2018-question-paper"
+         }
+       ],
+       info: {
+         title: "How to Use XAT 2018 Paper",
+         content: `<p>Practice regularly and focus on weak areas for better results.</p>`
+       }
+     },
+     // CAT VARC Questions by year (sample sets)
+     "cat-varc-questions-2023": {
+       title: "CAT VARC Questions 2023",
+       papers: [
+         {
+           title: "Reading Comprehension Set 2023",
+           desc: "Passages with questions to improve reading skills.",
+           link: "/cat-varc-questions/rc-2023"
+         },
+         {
+           title: "Para Jumbles 2023",
+           desc: "Practice rearranging sentences to form coherent paragraphs.",
+           link: "/cat-varc-questions/para-jumbles-2023"
+         }
+       ],
+       info: null
+     },
+     "cat-varc-questions-2022": {
+       title: "CAT VARC Questions 2022",
+       papers: [
+         {
+           title: "Reading Comprehension Set 2022",
+           desc: "Passages with questions to improve reading skills.",
+           link: "/cat-varc-questions/rc-2022"
+         },
+         {
+           title: "Para Jumbles 2022",
+           desc: "Practice rearranging sentences to form coherent paragraphs.",
+           link: "/cat-varc-questions/para-jumbles-2022"
+         }
+       ],
+       info: null
+     },
+     "cat-varc-questions-2021": {
+       title: "CAT VARC Questions 2021",
+       papers: [
+         {
+           title: "Reading Comprehension Set 2021",
+           desc: "Passages with questions to improve reading skills.",
+           link: "/cat-varc-questions/rc-2021"
+         },
+         {
+           title: "Para Jumbles 2021",
+           desc: "Practice rearranging sentences to form coherent paragraphs.",
+           link: "/cat-varc-questions/para-jumbles-2021"
+         }
+       ],
+       info: null
+     },
+     "cat-varc-questions-2020": {
+       title: "CAT VARC Questions 2020",
+       papers: [
+         {
+           title: "Reading Comprehension Set 2020",
+           desc: "Passages with questions to improve reading skills.",
+           link: "/cat-varc-questions/rc-2020"
+         },
+         {
+           title: "Para Jumbles 2020",
+           desc: "Practice rearranging sentences to form coherent paragraphs.",
+           link: "/cat-varc-questions/para-jumbles-2020"
+         }
+       ],
+       info: null
+     },
+     "cat-varc-questions-2019": {
+       title: "CAT VARC Questions 2019",
+       papers: [
+         {
+           title: "Reading Comprehension Set 2019",
+           desc: "Passages with questions to improve reading skills.",
+           link: "/cat-varc-questions/rc-2019"
+         },
+         {
+           title: "Para Jumbles 2019",
+           desc: "Practice rearranging sentences to form coherent paragraphs.",
+           link: "/cat-varc-questions/para-jumbles-2019"
+         }
+       ],
+       info: null
+     },
+     "cat-varc-questions-2018": {
+       title: "CAT VARC Questions 2018",
+       papers: [
+         {
+           title: "Reading Comprehension Set 2018",
+           desc: "Passages with questions to improve reading skills.",
+           link: "/cat-varc-questions/rc-2018"
+         },
+         {
+           title: "Para Jumbles 2018",
+           desc: "Practice rearranging sentences to form coherent paragraphs.",
+           link: "/cat-varc-questions/para-jumbles-2018"
+         }
+       ],
+       info: null
+     },
+     // CAT Quant Questions by year (sample sets)
+     "cat-quant-questions-2023": {
+       title: "CAT Quant Questions 2023",
+       papers: [
+         {
+           title: "Arithmetic Practice 2023",
+           desc: "Questions on number systems, percentages, and ratios.",
+           link: "/cat-quant-questions/arithmetic-2023"
+         },
+         {
+           title: "Algebra Practice 2023",
+           desc: "Algebraic expressions and equations practice.",
+           link: "/cat-quant-questions/algebra-2023"
+         }
+       ],
+       info: null
+     },
+     "cat-quant-questions-2022": {
+       title: "CAT Quant Questions 2022",
+       papers: [
+         {
+           title: "Arithmetic Practice 2022",
+           desc: "Questions on number systems, percentages, and ratios.",
+           link: "/cat-quant-questions/arithmetic-2022"
+         },
+         {
+           title: "Algebra Practice 2022",
+           desc: "Algebraic expressions and equations practice.",
+           link: "/cat-quant-questions/algebra-2022"
+         }
+       ],
+       info: null
+     },
+     "cat-quant-questions-2021": {
+       title: "CAT Quant Questions 2021",
+       papers: [
+         {
+           title: "Arithmetic Practice 2021",
+           desc: "Questions on number systems, percentages, and ratios.",
+           link: "/cat-quant-questions/arithmetic-2021"
+         },
+         {
+           title: "Algebra Practice 2021",
+           desc: "Algebraic expressions and equations practice.",
+           link: "/cat-quant-questions/algebra-2021"
+         }
+       ],
+       info: null
+     },
+     "cat-quant-questions-2020": {
+       title: "CAT Quant Questions 2020",
+       papers: [
+         {
+           title: "Arithmetic Practice 2020",
+           desc: "Questions on number systems, percentages, and ratios.",
+           link: "/cat-quant-questions/arithmetic-2020"
+         },
+         {
+           title: "Algebra Practice 2020",
+           desc: "Algebraic expressions and equations practice.",
+           link: "/cat-quant-questions/algebra-2020"
+         }
+       ],
+       info: null
+     },
+     "cat-quant-questions-2019": {
+       title: "CAT Quant Questions 2019",
+       papers: [
+         {
+           title: "Arithmetic Practice 2019",
+           desc: "Questions on number systems, percentages, and ratios.",
+           link: "/cat-quant-questions/arithmetic-2019"
+         },
+         {
+           title: "Algebra Practice 2019",
+           desc: "Algebraic expressions and equations practice.",
+           link: "/cat-quant-questions/algebra-2019"
+         }
+       ],
+       info: null
+     },
+     "cat-quant-questions-2018": {
+       title: "CAT Quant Questions 2018",
+       papers: [
+         {
+           title: "Arithmetic Practice 2018",
+           desc: "Questions on number systems, percentages, and ratios.",
+           link: "/cat-quant-questions/arithmetic-2018"
+         },
+         {
+           title: "Algebra Practice 2018",
+           desc: "Algebraic expressions and equations practice.",
+           link: "/cat-quant-questions/algebra-2018"
+         }
+       ],
+       info: null
+     },
+     // CAT DILR Questions by year (sample sets)
+     "cat-dilr-questions-2023": {
+       title: "CAT DILR Questions 2023",
+       papers: [
+         {
+           title: "Data Interpretation Set 2023",
+           desc: "Tables, charts, and graphs interpretation questions.",
+           link: "/cat-dilr-questions/di-2023"
+         },
+         {
+           title: "Logical Reasoning Puzzles 2023",
+           desc: "Seating arrangements, blood relations, and puzzles.",
+           link: "/cat-dilr-questions/lr-2023"
+         }
+       ],
+       info: null
+     },
+     "cat-dilr-questions-2022": {
+       title: "CAT DILR Questions 2022",
+       papers: [
+         {
+           title: "Data Interpretation Set 2022",
+           desc: "Tables, charts, and graphs interpretation questions.",
+           link: "/cat-dilr-questions/di-2022"
+         },
+         {
+           title: "Logical Reasoning Puzzles 2022",
+           desc: "Seating arrangements, blood relations, and puzzles.",
+           link: "/cat-dilr-questions/lr-2022"
+         }
+       ],
+       info: null
+     },
+     "cat-dilr-questions-2021": {
+       title: "CAT DILR Questions 2021",
+       papers: [
+         {
+           title: "Data Interpretation Set 2021",
+           desc: "Tables, charts, and graphs interpretation questions.",
+           link: "/cat-dilr-questions/di-2021"
+         },
+         {
+           title: "Logical Reasoning Puzzles 2021",
+           desc: "Seating arrangements, blood relations, and puzzles.",
+           link: "/cat-dilr-questions/lr-2021"
+         }
+       ],
+       info: null
+     },
+     "cat-dilr-questions-2020": {
+       title: "CAT DILR Questions 2020",
+       papers: [
+         {
+           title: "Data Interpretation Set 2020",
+           desc: "Tables, charts, and graphs interpretation questions.",
+           link: "/cat-dilr-questions/di-2020"
+         },
+         {
+           title: "Logical Reasoning Puzzles 2020",
+           desc: "Seating arrangements, blood relations, and puzzles.",
+           link: "/cat-dilr-questions/lr-2020"
+         }
+       ],
+       info: null
+     },
+     "cat-dilr-questions-2019": {
+       title: "CAT DILR Questions 2019",
+       papers: [
+         {
+           title: "Data Interpretation Set 2019",
+           desc: "Tables, charts, and graphs interpretation questions.",
+           link: "/cat-dilr-questions/di-2019"
+         },
+         {
+           title: "Logical Reasoning Puzzles 2019",
+           desc: "Seating arrangements, blood relations, and puzzles.",
+           link: "/cat-dilr-questions/lr-2019"
+         }
+       ],
+       info: null
+     },
+     "cat-dilr-questions-2018": {
+       title: "CAT DILR Questions 2018",
+       papers: [
+         {
+           title: "Data Interpretation Set 2018",
+           desc: "Tables, charts, and graphs interpretation questions.",
+           link: "/cat-dilr-questions/di-2018"
+         },
+         {
+           title: "Logical Reasoning Puzzles 2018",
+           desc: "Seating arrangements, blood relations, and puzzles.",
+           link: "/cat-dilr-questions/lr-2018"
+         }
+       ],
+       info: null
+     },
+     // XAT DM Practice by year (sample sets)
+     "xat-dm-practice-2023": {
+       title: "XAT DM Practice 2023",
+       papers: [
+         {
+           title: "Ethical Dilemmas 2023",
+           desc: "Practice questions on ethical decision making.",
+           link: "/xat-dm-practice/ethical-2023"
+         },
+         {
+           title: "Business Scenarios 2023",
+           desc: "Decision making in business contexts.",
+           link: "/xat-dm-practice/business-2023"
+         }
+       ],
+       info: null
+     },
+     "xat-dm-practice-2022": {
+       title: "XAT DM Practice 2022",
+       papers: [
+         {
+           title: "Ethical Dilemmas 2022",
+           desc: "Practice questions on ethical decision making.",
+           link: "/xat-dm-practice/ethical-2022"
+         },
+         {
+           title: "Business Scenarios 2022",
+           desc: "Decision making in business contexts.",
+           link: "/xat-dm-practice/business-2022"
+         }
+       ],
+       info: null
+     },
+     "xat-dm-practice-2021": {
+       title: "XAT DM Practice 2021",
+       papers: [
+         {
+           title: "Ethical Dilemmas 2021",
+           desc: "Practice questions on ethical decision making.",
+           link: "/xat-dm-practice/ethical-2021"
+         },
+         {
+           title: "Business Scenarios 2021",
+           desc: "Decision making in business contexts.",
+           link: "/xat-dm-practice/business-2021"
+         }
+       ],
+       info: null
+     },
+     "xat-dm-practice-2020": {
+       title: "XAT DM Practice 2020",
+       papers: [
+         {
+           title: "Ethical Dilemmas 2020",
+           desc: "Practice questions on ethical decision making.",
+           link: "/xat-dm-practice/ethical-2020"
+         },
+         {
+           title: "Business Scenarios 2020",
+           desc: "Decision making in business contexts.",
+           link: "/xat-dm-practice/business-2020"
+         }
+       ],
+       info: null
+     },
+     "xat-dm-practice-2019": {
+       title: "XAT DM Practice 2019",
+       papers: [
+         {
+           title: "Ethical Dilemmas 2019",
+           desc: "Practice questions on ethical decision making.",
+           link: "/xat-dm-practice/ethical-2019"
+         },
+         {
+           title: "Business Scenarios 2019",
+           desc: "Decision making in business contexts.",
+           link: "/xat-dm-practice/business-2019"
+         }
+       ],
+       info: null
+     },
+     "xat-dm-practice-2018": {
+       title: "XAT DM Practice 2018",
+       papers: [
+         {
+           title: "Ethical Dilemmas 2018",
+           desc: "Practice questions on ethical decision making.",
+           link: "/xat-dm-practice/ethical-2018"
+         },
+         {
+           title: "Business Scenarios 2018",
+           desc: "Decision making in business contexts.",
+           link: "/xat-dm-practice/business-2018"
+         }
+       ],
+       info: null
+     },
+     "cat-preparation": {
+       title: "CAT Preparation",
+       content: `<div class="bg-white rounded-lg shadow p-6 text-gray-700">
+         <h2 class="text-xl font-semibold mb-4">CAT Preparation Resources</h2>
+         <p>Find study plans, tips, and resources to help you prepare effectively for the CAT exam.</p>
+         <ul class="list-disc list-inside mt-3 space-y-1">
+           <li>Study schedules</li>
+           <li>Important topics</li>
+           <li>Mock tests and quizzes</li>
+         </ul>
+       </div>`,
+       papers: null,
+       info: null
+     },
+     "cat-questions": {
+       title: "CAT Questions",
+       content: `<div class="bg-white rounded-lg shadow p-6 text-gray-700">
+         <h2 class="text-xl font-semibold mb-4">CAT Questions</h2>
+         <p>Access a wide range of CAT questions categorized by topic and difficulty level.</p>
+         <ul class="list-disc list-inside mt-3 space-y-1">
+           <li>Verbal Ability</li>
+           <li>Quantitative Ability</li>
+           <li>Data Interpretation & Logical Reasoning</li>
+         </ul>
+       </div>`,
+       papers: null,
+       info: null
+     },
+     "contact": {
+       title: "Contact Us",
+       content: `<div class="bg-white rounded-lg shadow p-6 text-gray-700 max-w-lg mx-auto">
+         <h2 class="text-xl font-semibold mb-4">Contact AB Classes</h2>
+         <form id="contact-form" class="space-y-4">
+           <div>
+             <label for="name" class="block font-medium mb-1">Name</label>
+             <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FF0000]" />
+           </div>
+           <div>
+             <label for="email" class="block font-medium mb-1">Email</label>
+             <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FF0000]" />
+           </div>
+           <div>
+             <label for="message" class="block font-medium mb-1">Message</label>
+             <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FF0000]"></textarea>
+           </div>
+           <button type="submit" class="bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition">
+             Send Message
+           </button>
+         </form>
+         <p id="form-status" class="mt-4 text-green-600 hidden">Thank you for contacting us! We will get back to you soon.</p>
+       </div>`,
+       papers: null,
+       info: null
+     }
+   };
+
+   // Function to render page content
+   function renderPage(pageKey) {
+     const page = pages[pageKey];
+     if (!page) return;
+
+     // Update page title
+     pageTitle.textContent = page.title || "";
+
+     // Clear papers section and info section
+     papersSection.innerHTML = "";
+     infoTitle.textContent = "";
+     infoContent.innerHTML = "";
+     infoSection.style.display = "none";
+
+     // If page has papers, render them in flex boxes
+     if (page.papers && page.papers.length > 0) {
+       page.papers.forEach(paper => {
+         const article = document.createElement("article");
+         article.className = "bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col";
+
+         const h2 = document.createElement("h2");
+         h2.className = "text-xl font-semibold mb-2";
+         h2.textContent = paper.title;
+
+         const p = document.createElement("p");
+         p.className = "text-gray-600 flex-grow";
+         p.textContent = paper.desc;
+
+         const a = document.createElement("a");
+         a.className = "mt-4 inline-block text-center bg-[#FF0000] text-white px-4 py-2 rounded hover:bg-red-700 transition";
+         a.href = paper.link;
+         a.target = "_blank";
+         a.rel = "noopener noreferrer";
+         a.textContent = "Download PDF";
+
+         article.appendChild(h2);
+         article.appendChild(p);
+         article.appendChild(a);
+
+         papersSection.appendChild(article);
+       });
+       papersSection.style.display = "grid";
+       infoSection.style.display = "block";
+       if (page.info) {
+         infoTitle.textContent = page.info.title || "";
+         infoContent.innerHTML = page.info.content || "";
+       }
+     } else if (page.content) {
+       // No papers, hide papers section
+       papersSection.style.display = "none";
+       // Show content or info if available
+       infoSection.style.display = "block";
+       infoTitle.textContent = page.title || "";
+       infoContent.innerHTML = page.content;
+     } else {
+       papersSection.style.display = "none";
+       infoSection.style.display = "none";
+     }
+   }
+
+   // Initial render for default page (cat-previous-papers-2023)
+   renderPage("cat-previous-papers-2023");
+
+   // Handle nav clicks
+   navLinks.forEach(link => {
+     link.addEventListener("click", e => {
+       e.preventDefault();
+       const page = e.currentTarget.getAttribute("data-page");
+       if (page) {
+         renderPage(page);
+         // Close mobile menu if open
+         if (!mobileMenu.classList.contains("hidden")) {
+           mobileMenu.classList.add("hidden");
+         }
+       }
+     });
+   });
+   mobileLinks.forEach(link => {
+     link.addEventListener("click", e => {
+       e.preventDefault();
+       const page = e.currentTarget.getAttribute("data-page");
+       if (page) {
+         renderPage(page);
+         // Close mobile menu if open
+         if (!mobileMenu.classList.contains("hidden")) {
+           mobileMenu.classList.add("hidden");
+         }
+       }
+     });
+   });
+
+   // Mobile menu toggle
+   menuButton.addEventListener('click', () => {
+     mobileMenu.classList.toggle('hidden');
+   });
+
+   // Contact form submission
+   document.addEventListener("submit", function(e) {
+     if (e.target && e.target.id === "contact-form") {
+       e.preventDefault();
+       const form = e.target;
+       const status = document.getElementById("form-status");
+       // Simple validation (already required fields)
+       const name = form.name.value.trim();
+       const email = form.email.value.trim();
+       const message = form.message.value.trim();
+       if (name && email && message) {
+         // Simulate form submission success
+         form.reset();
+         status.classList.remove("hidden");
+         setTimeout(() => {
+           status.classList.add("hidden");
+         }, 5000);
+       }
+     }
+   });
+
+   // Accessibility: toggle aria-expanded on dropdown button
+   dropdownButton.addEventListener("click", () => {
+     const expanded = dropdownButton.getAttribute("aria-expanded") === "true";
+     dropdownButton.setAttribute("aria-expanded", !expanded);
+   });
+  </script>
+ </body>
+</html>

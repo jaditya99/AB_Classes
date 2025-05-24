@@ -1,0 +1,364 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Testimonials Carousel
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: transparent;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .carousel-container {
+      perspective: 1500px;
+      perspective-origin: 50% 50%;
+      height: 580px;
+      max-width: 400px;
+      margin: 3rem auto 4rem;
+      position: relative;
+      user-select: none;
+    }
+
+    .carousel {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carousel-item {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 360px;
+      height: 560px;
+      margin-left: -180px;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.12);
+      background: #ffffff;
+      border: 3px solid #ef4444; /* Tailwind red-500 */
+      transform-style: preserve-3d;
+      overflow-y: auto;
+      padding: 1rem 2.5rem 2.5rem 2.5rem;
+      cursor: default;
+      transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      user-select: text;
+      color: #b91c1c; /* Tailwind red-700 */
+      font-weight: 500;
+      scrollbar-width: thin;
+      scrollbar-color: #ef4444 transparent;
+    }
+
+    .carousel-item::-webkit-scrollbar {
+      width: 8px;
+    }
+    .carousel-item::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .carousel-item::-webkit-scrollbar-thumb {
+      background-color: #ef4444;
+      border-radius: 9999px;
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    .carousel-item:hover {
+      box-shadow: 0 0 30px rgb(239 68 68 / 0.6);
+      background: #fef2f2; /* Tailwind red-50 */
+      z-index: 10 !important;
+      transform: scale(1.05) translateZ(50px) !important;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Hide scrollbar for all browsers except when scrolling */
+    .carousel-item {
+      -ms-overflow-style: none;  /* IE and Edge */
+    }
+    .carousel-item:hover {
+      -ms-overflow-style: auto;
+      scrollbar-width: thin;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+      user-select: text;
+      color: #991b1b;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .testimonial-subtitle {
+      font-weight: 600;
+      font-size: 1.1rem;
+      user-select: text;
+      color: #dc2626;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-top: 0;
+    }
+
+    .testimonial-text {
+      font-weight: 500;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      flex-grow: 1;
+      white-space: pre-line;
+      color: #b91c1c;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    /* Positions for each card in the carousel */
+    .carousel-item:nth-child(1) {
+      transform: translateX(-280px) translateZ(-200px) rotateY(30deg);
+      opacity: 0.3;
+      z-index: 1;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carousel-item:nth-child(2) {
+      transform: translateX(-140px) translateZ(-100px) rotateY(15deg);
+      opacity: 0.6;
+      z-index: 2;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carousel-item:nth-child(3) {
+      transform: translateX(0) translateZ(0) rotateY(0deg);
+      opacity: 1;
+      z-index: 5;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carousel-item:nth-child(4) {
+      transform: translateX(140px) translateZ(-100px) rotateY(-15deg);
+      opacity: 0.6;
+      z-index: 2;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .carousel-item:nth-child(5) {
+      transform: translateX(280px) translateZ(-200px) rotateY(-30deg);
+      opacity: 0.3;
+      z-index: 1;
+      transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Arrows styling */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3.5rem;
+      color: #ef4444;
+      cursor: pointer;
+      user-select: none;
+      z-index: 20;
+      background: transparent;
+      border-radius: 9999px;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: none;
+      border: none;
+      outline: none;
+      transition: color 0.3s ease;
+    }
+
+    .arrow:hover {
+      color: #b91c1b;
+    }
+
+    .arrow-left {
+      left: 1.5rem;
+    }
+
+    .arrow-right {
+      right: 1.5rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      .carousel-container {
+        height: 520px;
+        max-width: 320px;
+      }
+      .carousel-item {
+        width: 280px;
+        height: 500px;
+        margin-left: -140px;
+        padding: 1rem 1.75rem 2rem 1.75rem;
+      }
+      .testimonial-author {
+        font-size: 1.25rem;
+        margin-bottom: 0.25rem;
+      }
+      .testimonial-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+      .testimonial-text {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+      .arrow {
+        font-size: 2.5rem;
+        width: 44px;
+        height: 44px;
+      }
+      .arrow-left {
+        left: 1rem;
+      }
+      .arrow-right {
+        right: 1rem;
+      }
+    }
+  </style>
+ </head>
+ <body>
+  <div aria-label="3D Testimonials Carousel" class="carousel-container">
+   <button aria-label="Previous testimonial" class="arrow arrow-left" id="prevBtn" type="button">
+    <i class="fas fa-angle-left"></i>
+   </button>
+   <div aria-atomic="true" aria-live="polite" class="carousel" id="carousel" role="region">
+    <article aria-label="Testimonial by Prince Jain CAT 99.77 percentile" class="carousel-item" tabindex="0">
+     <p class="testimonial-author">Prince Jain</p>
+     <p class="testimonial-subtitle">CAT - 99.77 %tile</p>
+     <p class="testimonial-text">
+      I would like to Thank Abhishek Gupta sir for his unparalleled efforts in bringing top notch practise sessions and questions for aspirants. I joined CAT course and it helped me increase my Quant scores further. The timing of classes was convenient with hectic college schedule. The journey isn’t over with GDPI still ahead but I am sure with guidance of sir, we will ace that too.
+
+      The personalized attention and constant motivation from the faculty made a huge difference in my preparation. The study material was comprehensive and the mock tests were very close to the actual exam pattern. I highly recommend AB Classes to all CAT aspirants aiming for top percentiles.
+     </p>
+    </article>
+    <article aria-label="Testimonial by Amrita Mishra CAT 99.64 percentile" class="carousel-item" tabindex="0">
+     <p class="testimonial-author">Amrita Mishra</p>
+     <p class="testimonial-subtitle">CAT - 99.64 %tile</p>
+     <p class="testimonial-text">
+      Abhishek Gupta sir has always supported us. He always encouraged us to attempt and analyse more and more mock tests. He always took out time to clear out our doubts and he gave us advises us on the strategies to solve the questions quicker. The guidance and support we got from AB Classes has been a major contributor in our success.
+
+      The interactive sessions and doubt clearing classes helped me stay on track. The faculty's dedication and the friendly environment made learning enjoyable. I am grateful for the constant encouragement and the valuable tips that helped me improve my speed and accuracy.
+     </p>
+    </article>
+    <article aria-label="Testimonial by Nikhil Taparia CAT 99.50 percentile" class="carousel-item" tabindex="0">
+     <p class="testimonial-author">Nikhil Taparia</p>
+     <p class="testimonial-subtitle">CAT - 99.50 %tile</p>
+     <p class="testimonial-text">
+      To score good marks in CAT one has to not only study consistently but take guidance from the best faculty. I am really thankful to Abhishek Sir from AB Classes , Raipur for helping me in scoring good marks in the exam.
+
+      The structured approach and regular feedback sessions helped me identify my weak areas and work on them effectively. The faculty's experience and insights were invaluable in my preparation journey.
+     </p>
+    </article>
+    <article aria-label="Testimonial by Yogesh Dewangan CAT 99.72 percentile" class="carousel-item" tabindex="0">
+     <p class="testimonial-author">Yogesh Dewangan</p>
+     <p class="testimonial-subtitle">CAT - 99.72 %tile</p>
+     <p class="testimonial-text">
+      I dedicate a huge credit of my success to all the faculties at AB classes, specially Abhishek Gupta sir, for their constant mentoring and support. They have been constant source of encouragement, specially when I scored badly in mock tests. They helped in identifying my weak areas and their tips did wonders in improving my final result of CAT’19.
+
+      The personalized mentoring and the focus on conceptual clarity made a significant impact on my preparation. The mock tests and analysis sessions were very helpful in building my confidence.
+     </p>
+    </article>
+    <article aria-label="Testimonial by Amrisha Verma CAT 99.56 percentile" class="carousel-item" tabindex="0">
+     <p class="testimonial-author">Amrisha Verma</p>
+     <p class="testimonial-subtitle">CAT - 99.56 %tile</p>
+     <p class="testimonial-text">
+      Abhishek Sir puts extra effort to keep everyone motivated, so that no one gives up. I was getting constant scores in all tests, there was no improvement. Then Abhishek sir analysed each test and and told me how to improve scores and on which topic I need to work more. It really helped me improve my score. Moreover, he is always there to help whenever guidance is required. I am really thankful to him.
+
+      The continuous support and detailed feedback helped me stay focused and improve steadily. The friendly environment and approachable faculty made the learning process smooth and effective.
+     </p>
+    </article>
+    <article aria-label="Testimonial by Nishant Sahni CAT 99.42 percentile" class="carousel-item" tabindex="0">
+     <p class="testimonial-author">Nishant Sahni</p>
+     <p class="testimonial-subtitle">CAT - 99.42 %tile</p>
+     <p class="testimonial-text">
+      I wish to express my utmost gratitude to all the faculty members of AB Classes, particularly to Abhishek Sir. It is because of your perpetual motivation and support that we, as the students of AB Classes are able to achieve such magnificent scores in CAT, XAT, IIFT and SNAP along with other management tests of the country.
+
+      The comprehensive study material, regular tests, and expert guidance created a perfect environment for success. The encouragement and motivation from the faculty were key factors in my achievement.
+     </p>
+    </article>
+   </div>
+   <button aria-label="Next testimonial" class="arrow arrow-right" id="nextBtn" type="button">
+    <i class="fas fa-angle-right"></i>
+   </button>
+  </div>
+  <script>
+    (() => {
+      const carousel = document.getElementById('carousel');
+      const items = Array.from(carousel.children);
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const totalItems = items.length;
+    
+      // Positions and rotations for 5 visible cards
+      const positions = [
+        { x: -280, z: -200, rotateY: 30, opacity: 0.3, zIndex: 1 },
+        { x: -140, z: -100, rotateY: 15, opacity: 0.6, zIndex: 2 },
+        { x: 0, z: 0, rotateY: 0, opacity: 1, zIndex: 5 },
+        { x: 140, z: -100, rotateY: -15, opacity: 0.6, zIndex: 2 },
+        { x: 280, z: -200, rotateY: -30, opacity: 0.3, zIndex: 1 },
+      ];
+    
+      // Current index of the center card
+      let currentIndex = 0;
+    
+      // Update carousel positions based on currentIndex
+      function updateCarousel() {
+        for (let i = 0; i < totalItems; i++) {
+          const item = items[i];
+          let offset = (i - currentIndex + totalItems) % totalItems;
+    
+          if (offset < 0) offset += totalItems;
+          let posIndex = offset;
+    
+          if (posIndex >= 5) {
+            item.style.opacity = 0;
+            item.style.zIndex = 0;
+            item.style.transform = 'scale(0)';
+          } else {
+            const { x, z, rotateY, opacity, zIndex } = positions[posIndex];
+            item.style.transform = `translateX(${x}px) translateZ(${z}px) rotateY(${rotateY}deg)`;
+            item.style.opacity = opacity;
+            item.style.zIndex = zIndex;
+          }
+        }
+      }
+    
+      // Button event listeners
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+        updateCarousel();
+      });
+    
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % totalItems;
+        updateCarousel();
+      });
+    
+      // Initialize
+      updateCarousel();
+    })();
+    </script>
+ </body>
+</html>

@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="AB Classes, Raipur (Chhattisgarh) is the Best Coaching center to prepare for CAT, XAT, IIFT, SNAP, NMAT, and other MBA entrance exams. Join us for expert guidance and top-notch preparation.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<title>Best CAT Preparation in Raipur - AB Classes</title>
+
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                padding: 10px;
+                gap: 20px;
+                justify-content: flex-start !important;
+            }
+
+            .text-section, .image-container {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+
+            /* Fix Why AB CLASSES banner */
+            div[style*="background-color: #FF0000; padding: 20px; text-align: center;"] {
+                padding: 15px 10px !important;
+            }
+            div[style*="background-color: #FF0000; padding: 20px; text-align: center;"] span {
+                font-size: 20px !important;
+                white-space: normal !important;
+                display: block;
+            }
+
+            /* Fix How To Prepare For CAT section */
+            div[style*="text-align: center; margin: 20px 0;"] h1 {
+                font-size: 24px !important;
+                margin-bottom: 10px !important;
+            }
+            div[style*="text-align: center; margin: 20px 0;"] img {
+                max-width: 100% !important;
+                height: auto !important;
+                border-radius: 8px !important;
+            }
+
+            .text-section h1 {
+                font-size: 2rem !important;
+            }
+
+            .description h2 {
+                font-size: 1.8rem !important;
+            }
+
+            .description h1 {
+                font-size: 2rem !important;
+            }
+
+            .description p {
+                font-size: 1.5rem !important;
+            }
+
+            .cta-buttons {
+                display: none !important;
+            }
+
+            .image-container {
+                height: 300px;
+                margin-top: 20px;
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+
+            .carousel img {
+                animation: none;
+                opacity: 1 !important;
+                position: relative !important;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .carousel img:not(:first-child) {
+                display: none !important;
+            }
+
+            /* Hide CAT courses heading */
+            div:has(> h1:contains("CAT & Other MBA Courses!")) {
+                display: none;
+            }
+
+            /* Simplify main heading */
+            .text-section h1 {
+                font-size: 1.8rem !important;
+                margin-bottom: 0.5rem !important;
+            }
+
+            .description h2 {
+                font-size: 1.6rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+
+            .description h1 {
+                font-size: 1.8rem !important;
+                margin-bottom: 0.3rem !important;
+            }
+
+            .description p {
+                font-size: 1.3rem !important;
+                margin-bottom: 1rem !important;
+            }
+
+            /* Course grid */
+            .course-grid {
+                grid-template-columns: 1fr !important;
+                padding: 0 10px !important;
+            }
+
+            /* Testimonial section */
+            .testimonial-container {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .testimonial-box {
+                width: 100% !important;
+                margin-bottom: 20px;
+            }
+
+            /* FAQ section */
+            .faq-tabs {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            /* Footer */
+            footer > div {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            footer > div > div {
+                max-width: 100% !important;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-section h1 {
+                font-size: 1.8rem !important;
+            }
+
+            .description h2 {
+                font-size: 1.6rem !important;
+            }
+
+            .description h1 {
+                font-size: 1.8rem !important;
+            }
+
+            .description p {
+                font-size: 1.3rem !important;
+            }
+
+            .image-container {
+                height: 200px;
+            }
+        }
+
+        /* Header Styling */
+        .header {
+            width: 100vw; /* Ensures full viewport width */
+            background-color: #005f73; /* Teal color */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 769px) {
+            .image-container {
+                height: 500px !important;
+            }
+            .carousel img {
+                height: 100% !important;
+                object-fit: contain !important;
+            }
+        }
+
+        /* Main Section */
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1300px;
+            margin: auto;
+            gap: 50px;
+            padding: 20px; /* Added some padding */
+        }
+
+        /* Left Side (Text + Buttons) */
+        .text-section {
+            flex: 1;
+            text-align: left;
+            max-width: 450px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .text-section h1 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        .description {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .button-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .button {
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out, background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+        }
+
+        /* Right Side (Images) */
+        .image-container {
+            flex: 2;
+            max-width: 750px;
+            height: 350px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden; /* Prevents unwanted padding/margins */
+        }
+
+        .carousel img {
+            position: relative;
+            width: 100%; /* Ensures full fit */
+            height: 100%;
+            object-fit: contain;
+            opacity: 1;
+            transition: none;
+            border-radius: 10px;
+        }
+
+        /* Removed animation keyframes and animation on carousel images */
+        /* @keyframes fade {
+            0% { opacity: 0; transform: scale(0.95) translateY(20px); }
+            25% { opacity: 1; transform: scale(1) translateY(0); }
+            75% { opacity: 1; transform: scale(1) translateY(0); }
+            100% { opacity: 0; transform: scale(0.95) translateY(20px); }
+        }
+
+        .carousel img:nth-child(1) { animation: fade 18s ease-in-out infinite 0s; }
+        .carousel img:nth-child(2) { animation: fade 18s ease-in-out infinite 6s; }
+        .carousel img:nth-child(3) { animation: fade 18s ease-in-out infinite 12s; } */
+
+        /* Features Section */
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers text vertically */
+            justify-content: center; /* Centers text horizontally */
+            padding: 20px; /* Adjust padding for better spacing */
+            background-color: #ff0000; /* Light background */
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        /* Image Banner */
+        .banner {
+            width: 80%; 
+            max-width: 800px; 
+            margin: 20px auto; 
+            border-radius: 5px;
+        }
+
+
+        .faq-title { text-align: center; font-size: 32px; font-weight: bold; margin-bottom: 10px; }
+        .faq-subtitle { text-align: center; font-size: 16px; color: #666; margin-bottom: 30px; }
+        .faq-tabs { display: flex; justify-content: center; gap: 30px; border-bottom: 2px solid #ddd; margin-bottom: 20px; }
+        .faq-tab { font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px; position: relative; transition: color 0.3s; }
+        .faq-tab.active { color: red; }
+        .faq-tab.active::after { content: ""; position: absolute; left: 0; bottom: -3px; width: 100%; height: 3px; background-color: red; }
+        .faq-container { max-width: 100%; margin: auto; }
+        .faq-item { border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer; display: block; }
+        .faq-question { font-size: 18px; font-weight: bold; display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: none; text-align: left; cursor: pointer; padding: 10px 0; }
+        .faq-question i { font-size: 16px; color: red; }
+        .faq-answer { display: none; font-size: 16px; color: #444; padding-top: 10px; }
+
+    </style>
+
+
+    <script>
+        // Function to load the header
+        function loadHeader() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading header:', error));
+        }
+
+        // Function to load the navbar
+        function loadNavbar() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                    initializeDropdowns(); // Initialize dropdowns after loading
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        }
+
+        // Function to initialize dropdown functionality
+        function initializeDropdowns() {
+            document.querySelectorAll(".left-panel a").forEach(link => {
+                link.addEventListener("mouseover", function() {
+                    let sectionId = this.getAttribute("data-section");
+                    document.querySelectorAll(".dropdown-content").forEach(content => content.style.display = "none");
+                    document.getElementById(sectionId).style.display = "block";
+                });
+            });
+
+            // Hide dropdown content when mouse leaves the dropdown
+            document.querySelector('.dropdown').addEventListener('mouseleave', function() {
+                document.querySelectorAll(".dropdown-content").forEach(content => content.style.display = "none");
+            });
+        }
+
+        // Load the header and navbar when the window loads
+        window.onload = function () {
+            console.log("Loading header and navbar...");
+            loadHeader();
+            loadNavbar();
+        };
+    </script>
+</head>
+<body class="bg-white font-sans">
+
+    <!-- Header Placeholder -->
+    <div id="header"></div>
+
+    <!-- Navbar Placeholder -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <div class="main-container" style="padding: 20px; justify-content: flex-start;">
+        
+        
+
+        
+
+        <!-- Right Side: Image Carousel -->
+        <div class="image-container" style="max-width: 1200px; height: 350px; position: relative; border-radius: 10px; overflow: hidden; margin: 0 auto;">
+            <div class="carousel">
+                
+                
+                <img src="results/r3.jpg" alt="Image 3">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Features Section -->
+    <div style="background-color: #FF0000; padding: 20px; text-align: center;">
+        <span style="white-space: nowrap; color: white; font-size: 28px; font-weight: 800;">
+          Why AB CLASSES is the Right Choice For Cat – Hear From Rankers!
+        </span>
+      </div>
+      <iframe 
+      src="testimonial.html" 
+      class="w-full block" 
+      style="height: 100vh; margin: 0; padding-top: 100px; border: none; display: block; overflow: hidden;">
+    </iframe>
+    
+    
+      
+      
+    <!-- Banner Data -->
+    <iframe src="data.html" class="w-full mt-10" style="height: 1000px; border: none;"></iframe>
+    
+    <!-- data section -->
+    <div class="bg-red-100 py-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Statistic Boxes -->
+            <div class="text-center p-5 bg-white rounded-lg shadow-lg">
+                <h2 class="text-4xl font-bold count" data-target="50">0</h2>
+                <p class="text-2xl"><strong>99+ %ile</strong> - 50+ Students</p>
+            </div>
+            <div class="text-center p-5 bg-white rounded-lg shadow-lg">
+                <h2 class="text-4xl font-bold count" data-target="200">0</h2>
+                <p class="text-2xl"><strong>95+ %ile</strong> - 200+ Students</p>
+            </div>
+            <div class="text-center p-5 bg-white rounded-lg shadow-lg">
+                <h2 class="text-4xl font-bold count" data-target="400">0</h2>
+                <p class="text-2xl"><strong>90+ %ile</strong> - 400+ Students</p>
+            </div>
+            <div class="text-center p-5 bg-white rounded-lg shadow-lg">
+                <h2 class="text-4xl font-bold count" data-target="500">0</h2>
+                <p class="text-2xl"><strong>OMETS</strong> - 500+ Students</p>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .bg-red-100 {
+            background-color: #FF0000; /* Light Red Color */
+        }
+    
+        .count {
+            transition: all 2s ease; /* Animation duration and ease */
+        }
+
+        @media (max-width: 768px) {
+            .bg-red-100 > div > div {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 15px !important;
+            }
+            .bg-red-100 > div > div > div {
+                width: 80% !important;
+                max-width: 300px !important;
+                margin: 0 auto !important;
+            }
+        }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.count');
+    
+            // Function to start the counting animation
+            const startCounting = (counter) => {
+                const target = +counter.getAttribute('data-target');
+                let start = 0;
+                const increment = Math.ceil(target / 100); // Increment value
+    
+                const countInterval = setInterval(() => {
+                    start += increment;
+                    if (start >= target) {
+                        start = target; // Ensure it doesn't exceed the target
+                        clearInterval(countInterval);
+                    }
+                    counter.innerText = start;
+                }, 25); // Interval for updating the counter
+            };
+    
+            // Intersection Observer to detect when the counters are in view
+            const observeCounters = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counterElement = entry.target;
+                        startCounting(counterElement);
+                        observer.unobserve(counterElement); // Stop observing after counting starts
+                    }
+                });
+            };
+    
+            const options = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% of the element is visible
+            };
+    
+            const observer = new IntersectionObserver(observeCounters, options);
+            counters.forEach(counter => observer.observe(counter)); // Start observing each counter
+        });
+    </script>
+ <!-- info section!!!! -->
+
+<!-- How To Prepare For CAT? Section -->
+<div class="flowchart-container" style="text-align: center; margin: 20px 0;">
+    <h1 style="font-size: 36px; color: #ff0000;"><b>How To Prepare For CAT?</b></h1>
+    <img src="images/flowchart.jpg" alt="Flowchart" style="max-width: 100%; height: auto; border-radius: 10px;">
+</div>
+
+
+<iframe src="video_testimonial.html" class="w-full mt-10" style="height: 1000px; border: none;"></iframe>
+
+<!-- CAT courses & Other MBA Courses Section -->
+<div style="text-align: center; margin: 20px 0;">
+    <h1 style="font-size: 36px;"><b>CAT & Other MBA Courses!</b></h1>
+</div>
+
+    <!-- 3x3 Grid Layout with Wider and Longer Boxes -->
+    <div class="course-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; justify-content: center; max-width: 1400px; margin: auto; padding-bottom: 30px;">
+
+    <!-- Box 1 -->
+    <div style="background-color: #ffffff; border: 2px solid black; border-radius: 10px; padding: 40px; text-align: center; min-height: 500px; width: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+        <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">CAT 2025 COMPLETE COURSE</h2>
+        
+        <hr style="border: 1px solid black; width: 100%; margin: 0;">
+        <div style="font-size: 18px; color: #333; margin: 10px 0;">
+            Get intensive, targeted preparation with expert guidance, daily live classes for CAT 2025, and comprehensive practice materials for CAT, XAT, NMAT & SNAP focused study plan.
+        </div>
+        <p style="font-size: 22px; font-weight: bold; color: #333;">Rs. 39,999 <span style="text-decoration: line-through; color: #888;">Rs. 59,999</span></p>
+        <span style="color: #ff0000; font-weight: bold;">Scholarships Available</span>
+        <div style="display: flex; justify-content: center; gap: 10px; padding-top: 10px;">
+            <a href="cd.html" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">View Details</a>
+            <a href="https://api.whatsapp.com/send?phone=919827118488&text=I%20want%20to%20enquire%20about%20AB%20Classes" style="background-color: #ff0000; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Enroll Now</a>
+        </div>
+    </div>
+    
+    <!-- Box 2 -->
+    <div style="background-color: #ffffff; border: 2px solid black; border-radius: 10px; padding: 40px; text-align: center; min-height: 500px; width: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+        <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">CAT 2025 ONLINE COURSE</h2>
+       
+        <hr style="border: 1px solid black; width: 100%; margin: 0;">
+        <div style="font-size: 18px; color: #333; margin: 10px 0;">
+            Experience flexible learning with our expert-designed CAT 2025 Online Course. Get access to live interactive sessions, detailed study plans, and recorded lectures for comprehensive self-study.
+        </div>
+        <p style="font-size: 22px; font-weight: bold; color: #333;">Rs. 25,000 <span style="text-decoration: line-through; color: #888;">Rs. 49,999</span></p>
+        <span style="color: #ff0000; font-weight: bold;">Scholarships Available</span>
+        <div style="display: flex; justify-content: center; gap: 10px; padding-top: 10px;">
+            <a href="cd.html" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">View Details</a>
+            <a href="https://api.whatsapp.com/send?phone=919827118488&text=I%20want%20to%20enquire%20about%20AB%20Classes" style="background-color: #ff0000; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Enroll Now</a>
+        </div>
+    </div>
+    
+    <!-- Box 3 -->
+    <div style="background-color: #ffffff; border: 2px solid black; border-radius: 10px; padding: 40px; text-align: center; min-height: 500px; width: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+        <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">CAT 2025 SELF-PACED COURSE</h2>
+        
+        <hr style="border: 1px solid black; width: 100%; margin: 0;">
+        <div style="font-size: 18px; color: #333; margin: 10px 0;">
+            Study at your own pace with our Self-Paced Course. Get lifetime access to structured video lessons, practice questions, and topic-wise tests to master the CAT syllabus.
+        </div>
+        <p style="font-size: 22px; font-weight: bold; color: #333;">Rs. 25,000 <span style="text-decoration: line-through; color: #888;">Rs. 49,999</span></p>
+        <span style="color: #ff0000; font-weight: bold;"></span>
+        <div style="display: flex; justify-content: center; gap: 10px; padding-top: 10px;">
+            <a href="cd.html" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">View Details</a>
+            <a href="https://api.whatsapp.com/send?phone=919827118488&text=I%20want%20to%20enquire%20about%20AB%20Classes" style="background-color: #ff0000; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Enroll Now</a>
+        </div>
+    </div>
+    </div>
+
+</div>
+<iframe src="course_details.html" class="w-full mt-10" style="height: 1000px; border: none;"></iframe>
+<!-- Heading with red background -->
+<div style="background-color: #ff0000; width: 100%; padding: 20px 10px; text-align: center;">
+    <h2 style="color: white; font-size: 24px; font-weight: bold; margin: 0;">Inside Look: CAT 2023 Solved Paper</h2>
+</div>
+
+<!-- Video Section with light gray background -->
+<div style="background-color: #f0f0f0; width: 100%; padding: 20px 0; text-align: center;">
+    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 1400px; margin: auto;">
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/_x1jIezkR10" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/HtwJLXdzGMQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="400" height="225" src="https://www.youtube.com/embed/dNW-kbcvtfk" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<!-- Video Section with light gray background ENDING-->
+
+<!-- About Section -->
+<!-- About Abhishek Sir Section with Inline CSS -->
+<div style="background-color: #f8f9fa; width: 100%; padding: 40px 10px; text-align: center; animation: fadeIn 1s ease-in-out;">
+    <h2 style="color: #333; font-size: 28px; font-weight: bold; margin-bottom: 20px;">Know Your Mentor</h2>
+
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; max-width: 1200px; margin: auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); animation: fadeIn 1.5s ease-in-out;">
+        
+        <!-- Teacher's Image -->
+        <div style="flex: 1; min-width: 250px; text-align: center; transition: transform 0.3s ease-in-out;">
+            <img src="images/Absir.jpg" alt="Abhishek Sir" 
+                style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 4px solid #ddd; transition: transform 0.3s ease-in-out;"
+                onmouseover="this.style.transform='scale(1.05)'" 
+                onmouseout="this.style.transform='scale(1)'">
+        </div>
+
+        <!-- Teacher's Details -->
+        <div style="flex: 2; min-width: 300px; text-align: left; padding: 20px;">
+            <h3 style="color: #222; font-size: 24px; font-weight: bold; margin: 0;">ABHISHEK SIR, Founder</h3>
+            <p style="color: #ff0000; font-size: 18px; font-weight: bold;">IIFT 100 Percentiler</p>
+            <p style="color: #555; font-size: 16px; margin: 10px 0; line-height: 1.6;">Abhishek is a renowned mentor with 10+ years of experience in CAT coaching. His unique approach makes learning Quant, Logical Reasoning, and Data Interpretation easy and effective.</p>
+            <p style="color: #555; font-size: 16px; margin: 10px 0; line-height: 1.6;"><strong style="color: #ff0000;">Experience:</strong> Over a decade of training thousands of CAT aspirants with high success rates.</p>
+            <p style="color: #555; font-size: 16px; margin: 10px 0; line-height: 1.6;"><strong style="color: #ff0000;">Achievements:</strong> CAT 100 Percentiler | IIFT Delhi Alumnus | NIT Raipur Silver Medalist.</p>
+            <p style="color: #555; font-size: 16px; margin: 10px 0; line-height: 1.6;"><strong style="color: #ff0000;">Expertise:</strong> CAT, XAT, IIFT, and GMAT with deep conceptual clarity and shortcut techniques.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Inline Animation -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("div[style*='animation']").forEach(el => {
+            el.style.opacity = 0;
+            setTimeout(() => {
+                el.style.transition = "opacity 1s ease-in-out, transform 1s ease-in-out";
+                el.style.opacity = 1;
+                el.style.transform = "translateY(0px)";
+            }, 200);
+        });
+    });
+</script>
+
+
+
+<!-- Success Stories Section -->
+<!-- Success Stories Section -->
+
+
+<div style="background-color: white; width: 100%; padding: 0; text-align: center;">
+    <!-- Full-width Red Heading -->
+    <div style="background-color: #FF0000; width: 100%; padding: 20px 0; text-align: center;">
+        <h2 style="color: white; font-size: 32px; font-weight: bold; text-transform: uppercase; margin: 0;">
+            HEAR FROM OUR STUDENTS
+        </h2>
+        
+    </div>
+
+    <div class="testimonial-container" style="display: flex; justify-content: space-between; align-items: flex-start; max-width: 1200px; margin: 40px auto; gap: 40px; flex-wrap: nowrap;">
+        <!-- Testimonial Box -->
+        <div class="testimonial-box" style="width: 48%; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative; min-height: 600px;">
+            <!-- Increased the height of testimonial boxes and image containers -->
+            <h3 style="color: #333; font-size: 26px; font-weight: bold; margin-bottom: 20px; text-align: center;">CAT 2023 & Beyond</h3>
+            <div style="position: relative; max-width: 100%; overflow: hidden; border-radius: 12px; height: 500px;">
+                <div id="testimonial-slider-2023" style="display: flex; transition: transform 0.8s ease-in-out; width: 400%;">
+                    <img src="images/P1.jpg" alt="P1" style="width: 25%; border-radius: 12px;">
+                    <img src="images/P2.jpg" alt="P2" style="width: 25%; border-radius: 12px;">
+                    <img src="images/P3.jpg" alt="P3" style="width: 25%; border-radius: 12px;">
+                    <img src="images/P4.jpg" alt="P4" style="width: 25%; border-radius: 12px;">
+                </div>
+                <button onclick="prevTestimonial2023()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer;">❮</button>
+                <button onclick="nextTestimonial2023()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer;">❯</button>
+            </div>
+        </div>
+
+        <div class="testimonial-box" style="width: 48%; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative; min-height: 600px;">
+            <!-- Increased the height of testimonial boxes and image containers -->
+            <h3 style="color: #333; font-size: 26px; font-weight: bold; margin-bottom: 20px; text-align: center;">ACHIEVERS-CAT 2024</h3>
+            <div style="position: relative; max-width: 100%; overflow: hidden; border-radius: 12px; height: 500px;">
+                <div id="testimonial-slider" style="display: flex; transition: transform 0.8s ease-in-out; width: 400%;">
+                    <img src="images/t1.jpg" alt="Testimonial 1" style="width: 25%; border-radius: 12px;">
+                    <img src="images/t2.jpg" alt="Testimonial 2" style="width: 25%; border-radius: 12px;">
+                    <img src="images/t3.jpg" alt="Testimonial 3" style="width: 25%; border-radius: 12px;">
+                    <img src="images/t4.jpg" alt="Testimonial 4" style="width: 25%; border-radius: 12px;">
+                </div>
+                <button onclick="prevTestimonial()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer;">❮</button>
+                <button onclick="nextTestimonial()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0, 0, 0, 0.5); color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer;">❯</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let index2023 = 0;
+    const slider2023 = document.getElementById("testimonial-slider-2023");
+    const images2023 = slider2023.children.length;
+
+    function showTestimonial2023() {
+        slider2023.style.transform = `translateX(-${index2023 * 25}%)`;
+    }
+
+    function nextTestimonial2023() {
+        index2023 = (index2023 + 1) % images2023;
+        showTestimonial2023();
+    }
+
+    function prevTestimonial2023() {
+        index2023 = (index2023 - 1 + images2023) % images2023;
+        showTestimonial2023();
+    }
+
+    setInterval(nextTestimonial2023, 5000);
+
+    let index = 0;
+    const slider = document.getElementById("testimonial-slider");
+    const images = slider.children.length;
+
+    function showTestimonial() {
+        slider.style.transform = `translateX(-${index * 25}%)`;
+    }
+
+    function nextTestimonial() {
+        index = (index + 1) % images;
+        showTestimonial();
+    }
+
+    function prevTestimonial() {
+        index = (index - 1 + images) % images;
+        showTestimonial();
+    }
+
+    setInterval(nextTestimonial, 5000);
+</script>
+
+<!-- FAQ -->
+
+<!-- FAQ Section -->
+
+<div style="width: 100%; padding: 40px 15%;">
+    <h2 style="text-align: center; font-size: 32px; font-weight: bold; margin-bottom: 10px;">Frequently Asked Questions</h2>
+    <p style="text-align: center; font-size: 16px; color: #666; margin-bottom: 30px;">Journey Of A Thousand Miles Begins With A Single Step</p>
+
+    <div style="display: flex; justify-content: center; gap: 30px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
+        <span class="faq-tab active" onclick="showFAQ('all')" style="font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px; color: red;">All</span>
+        <span class="faq-tab" onclick="showFAQ('course')" style="font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px;">About the CAT Online Course</span>
+        <span class="faq-tab" onclick="showFAQ('exam')" style="font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px;">About CAT Exam</span>
+        <span class="faq-tab" onclick="showFAQ('misc')" style="font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px;">Miscellaneous</span>
+    </div>
+
+    <div id="faq-list">
+
+        <!-- Course FAQs -->
+        <div class="faq-item" data-category="course" style="border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer;">
+            <button onclick="toggleFAQ(this)" style="font-size: 18px; font-weight: bold; display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: none; text-align: left; cursor: pointer; padding: 10px 0;">📌 Is online CAT coaching worth it? <i style="font-size: 16px; color: red;">▼</i></button>
+            <div class="faq-answer" style="display: none; font-size: 16px; color: #444; padding-top: 10px;">Yes! Online coaching offers structured study plans, flexibility, and expert mentor.</div>
+        </div>
+
+        <div class="faq-item" data-category="course" style="border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer;">
+            <button onclick="toggleFAQ(this)" style="font-size: 18px; font-weight: bold; display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: none; text-align: left; cursor: pointer; padding: 10px 0;">🎓 Are live classes available? <i style="font-size: 16px; color: red;">▼</i></button>
+            <div class="faq-answer" style="display: none; font-size: 16px; color: #444; padding-top: 10px;">Yes, we offer both live and recorded classes.</div>
+        </div>
+
+        <!-- Exam FAQs -->
+        <div class="faq-item" data-category="exam" style="border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer;">
+            <button onclick="toggleFAQ(this)" style="font-size: 18px; font-weight: bold; display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: none; text-align: left; cursor: pointer; padding: 10px 0;">📅 How often is the CAT exam conducted? <i style="font-size: 16px; color: red;">▼</i></button>
+            <div class="faq-answer" style="display: none; font-size: 16px; color: #444; padding-top: 10px;">CAT is conducted once every year.</div>
+        </div>
+
+        <div class="faq-item" data-category="exam" style="border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer;">
+            <button onclick="toggleFAQ(this)" style="font-size: 18px; font-weight: bold; display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: none; text-align: left; cursor: pointer; padding: 10px 0;">📖 What are the eligibility criteria for CAT? <i style="font-size: 16px; color: red;">▼</i></button>
+            <div class="faq-answer" style="display: none; font-size: 16px; color: #444; padding-top: 10px;">Candidates need a Bachelor's degree with at least 50% marks.</div>
+        </div>
+
+        <!-- Miscellaneous FAQs -->
+        <div class="faq-item" data-category="misc" style="padding: 15px 0; cursor: pointer;">
+            <button onclick="toggleFAQ(this)" style="font-size: 18px; font-weight: bold; display: flex; align-items: center; justify-content: space-between; width: 100%; border: none; background: none; text-align: left; cursor: pointer; padding: 10px 0;">📺 Can I prepare for CAT in 3 months? <i style="font-size: 16px; color: red;">▼</i></button>
+            <div class="faq-answer" style="display: none; font-size: 16px; color: #444; padding-top: 10px;">Yes, but a structured plan and intense preparation are required.</div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleFAQ(button) {
+            let answer = button.nextElementSibling;
+            let icon = button.querySelector("i");
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+            icon.textContent = answer.style.display === "block" ? "▲" : "▼";
+        }
+
+        function showFAQ(category) {
+            let items = document.querySelectorAll(".faq-item");
+            let tabs = document.querySelectorAll(".faq-tab");
+
+            tabs.forEach(tab => tab.style.color = "");
+            document.querySelector(`[onclick="showFAQ('${category}')"]`).style.color = "red";
+
+            items.forEach(item => {
+                item.style.display = (category === "all" || item.getAttribute("data-category") === category) ? "block" : "none";
+            });
+        }
+    </script>
+</div>
+
+
+ <!-- FAQ ENDING  -->
+
+
+    <!-- Footer -->
+    <footer class="bg-[#ff0000] flex-shrink-0 p-12 text-white w-full">
+     <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-start gap-12">
+      <div class="flex flex-col space-y-4 md:w-1/3">
+       <h3 class="text-xl font-bold border-b border-white pb-2">AB Classes</h3>
+       <p class="text-sm text-white/90">
+        AB Classes is your trusted partner for CAT preparation, delivering
+        top-notch coaching and success stories year after year.
+       </p>
+       <div class="flex space-x-4 mt-2">
+        <a
+          href="https://api.whatsapp.com/send?phone=919827118488&text=I%20want%20to%20enquire%20about%20AB%20Classes"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+          class="hover:text-white/80 transition"
+          ><i class="fab fa-facebook fa-lg"></i
+        ></a>
+        <a
+          href="https://twitter.com/abclasses"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="hover:text-white/80 transition"
+          ><i class="fab fa-twitter fa-lg"></i
+        ></a>
+        <a
+          href="https://www.instagram.com/cat_abclasses/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          class="hover:text-white/80 transition"
+          ><i class="fab fa-instagram fa-lg"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/company/abclasses"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="hover:text-white/80 transition"
+          ><i class="fab fa-linkedin fa-lg"></i
+        ></a>
+       </div>
+      </div>
+      <div class="flex flex-col space-y-4 md:w-1/3">
+       <h3 class="text-xl font-bold border-b border-white pb-2">Quick Links</h3>
+       <nav class="flex flex-col space-y-2 text-white/90">
+        <a
+          href=""
+          class="hover:text-white/80 transition"
+          >Home</a
+        >
+        <a href="results.html"
+          class="hover:text-white/80 transition"
+          >Results</a
+        >
+        <a href="cd.html"
+          class="hover:text-white/80 transition"
+          >Courses</a
+        >
+        <a href="https://api.whatsapp.com/send?phone=919827118488&text=I%20want%20to%20enquire%20about%20AB%20Classes" class="hover:text-white/80 transition"
+          >Contact</a
+        >
+       </nav>
+      </div>
+      <div class="flex flex-col space-y-4 md:w-1/3">
+       <h3 class="text-xl font-bold border-b border-white pb-2">Contact Us</h3>
+       <address class="not-italic text-white/90 space-y-2">
+        <p>AB Classes Pvt. Ltd.</p>
+        <p> Agrasen Chowk, Raipur, Chhattisgarh 492001</p>
+        <p>Phone: <a href="tel:+919827118488" class="hover:text-white/80">+91 98271 18488</a></p>
+        <p>Email: <a href="mailto:info@abclasses.in" class="hover:text-white/80">info@abclasses.in</a></p>
+       </address>
+      </div>
+     </div>
+    </footer>
+
+</body>
+</html>

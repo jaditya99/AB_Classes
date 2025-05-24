@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+  <title>AB Classes</title>
+</head>
+<body class="bg-white font-sans overflow-x-hidden">
+
+<!-- Header -->
+<header class="bg-[#005f73] text-white w-full">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo and Title -->
+    <div class="flex items-center">
+      <img src="images/logo.jpg" alt="AB Classes Logo" class="h-12 w-auto mr-3"/>
+      <h1 class="text-xl font-bold hidden sm:block">Welcome to AB Classes!</h1>
+    </div>
+
+    <!-- Desktop Links -->
+    <div class="hidden sm:flex items-center space-x-4">
+      <a href="https://api.whatsapp.com/send?phone=919827118488&amp;text=I%20want%20to%20enquire%20about%20AB%20Classes"
+         class="bg-white text-[#005f73] py-2 px-4 rounded-md flex items-center transition duration-300 hover:bg-gray-600 hover:text-white"
+         target="_blank">
+        <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+      </a>
+      <a href="https://website-6ig.pages.dev/registration"
+         class="bg-white text-[#005f73] py-2 px-4 rounded-md transition duration-300 hover:bg-gray-600 hover:text-white">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="sm:hidden">
+      <button id="menu-toggle" class="focus:outline-none text-white text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="sm:hidden hidden px-4 pb-4 bg-[#005f73]">
+    <div class="flex flex-col space-y-2">
+      <a href="index.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">Home</a>
+      
+      <div class="dropdown">
+        <button class="dropdown-btn text-white py-2 px-4 rounded-md hover:bg-[#0a9396] w-full text-left flex justify-between items-center">
+          Courses <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="dropdown-content hidden pl-4">
+          <a href="cat.html" class="block text-white py-2 hover:bg-[#0a9396]">CAT Preparation</a>
+          <a href="mba.html" class="block text-white py-2 hover:bg-[#0a9396]">MBA Entrance</a>
+          <a href="clat.html" class="block text-white py-2 hover:bg-[#0a9396]">CLAT Preparation</a>
+        </div>
+      </div>
+      
+      <a href="results.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">Results</a>
+      <a href="about.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">About Us</a>
+      <a href="contact.html" class="text-white py-2 px-4 rounded-md hover:bg-[#0a9396]">Contact</a>
+      
+      <a href="https://api.whatsapp.com/send?phone=919827118488&amp;text=I%20want%20to%20enquire%20about%20AB%20Classes"
+         class="block bg-white text-[#005f73] py-2 px-4 rounded-md mt-2 text-center transition duration-300 hover:bg-gray-600 hover:text-white"
+         target="_blank">
+        <i class="fab fa-whatsapp mr-1"></i> WhatsApp
+      </a>
+      <a href="https://website-6ig.pages.dev/registration"
+         class="block bg-white text-[#005f73] py-2 px-4 rounded-md text-center transition duration-300 hover:bg-gray-600 hover:text-white">
+        Get Started
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .dropdown-btn {
+      transition: all 0.3s ease;
+    }
+    .dropdown-btn.active {
+      background-color: #0a9396;
+    }
+    .dropdown-btn.active i {
+      transform: rotate(180deg);
+    }
+    .dropdown-content {
+      transition: max-height 0.3s ease;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .dropdown-content.show {
+      max-height: 500px;
+    }
+  </style>
+
+  <script>
+    document.querySelectorAll('.dropdown-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        content.classList.toggle('show');
+      });
+    });
+  </script>
+</header>
+
+<!-- Script to toggle mobile menu -->
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  toggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>

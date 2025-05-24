@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - CAT Coaching</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            width: 100%;
+            padding: 40px 10%;
+        }
+
+        .faq-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .faq-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .faq-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .faq-tab {
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .faq-tab.active {
+            color: red;
+        }
+
+        .faq-tab.active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 3px;
+            background-color: red;
+        }
+
+        .faq-container {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            border: none;
+            background: none;
+            text-align: left;
+            cursor: pointer;
+            padding: 10px 0;
+        }
+
+        .faq-question i {
+            font-size: 16px;
+            color: red;
+        }
+
+        .faq-answer {
+            display: none;
+            font-size: 16px;
+            color: #444;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <p class="faq-subtitle">Journey Of A Thousand Miles Begin From A Single Step </p>
+
+    <div class="faq-tabs">
+        <span class="faq-tab active" onclick="showFAQ('all')">All</span>
+        <span class="faq-tab" onclick="showFAQ('course')">About the CAT Online Preparation Course</span>
+        <span class="faq-tab" onclick="showFAQ('exam')">About CAT Exam</span>
+        <span class="faq-tab" onclick="showFAQ('misc')">Miscellaneous</span>
+    </div>
+
+    <div class="faq-container" id="faq-list">
+
+        <!-- Course FAQs -->
+        <div class="faq-item" data-category="course">
+            <button class="faq-question" onclick="toggleFAQ(this)">📌 Is online CAT coaching worth it? <i>▼</i></button>
+            <div class="faq-answer">Yes! Online coaching offers structured study plans, flexibility, and access to expert mentors.</div>
+        </div>
+
+        <div class="faq-item" data-category="course">
+            <button class="faq-question" onclick="toggleFAQ(this)">🎓 Are all study materials included? <i>▼</i></button>
+            <div class="faq-answer">Yes, the course includes PDFs, notes, recorded sessions, and test series.</div>
+        </div>
+
+        <div class="faq-item" data-category="course">
+            <button class="faq-question" onclick="toggleFAQ(this)">🖥️ Is the course fully online? <i>▼</i></button>
+            <div class="faq-answer">Yes, everything is online, including live and recorded lectures.</div>
+        </div>
+
+        <div class="faq-item" data-category="course">
+            <button class="faq-question" onclick="toggleFAQ(this)">📅 How long is the course valid? <i>▼</i></button>
+            <div class="faq-answer">The course is valid until the upcoming CAT exam.</div>
+        </div>
+
+        <div class="faq-item" data-category="course">
+            <button class="faq-question" onclick="toggleFAQ(this)">📈 Are mock tests included? <i>▼</i></button>
+            <div class="faq-answer">Yes, you will get full-length mock tests and sectional tests.</div>
+        </div>
+
+        <!-- Exam FAQs -->
+        <div class="faq-item" data-category="exam">
+            <button class="faq-question" onclick="toggleFAQ(this)">📅 How many times can I take the CAT exam? <i>▼</i></button>
+            <div class="faq-answer">There is no limit to the number of attempts.</div>
+        </div>
+
+        <div class="faq-item" data-category="exam">
+            <button class="faq-question" onclick="toggleFAQ(this)">📖 What subjects are in CAT? <i>▼</i></button>
+            <div class="faq-answer">Quantitative Aptitude, Verbal Ability, Logical Reasoning & Data Interpretation.</div>
+        </div>
+
+        <div class="faq-item" data-category="exam">
+            <button class="faq-question" onclick="toggleFAQ(this)">⌛ How long is the CAT exam? <i>▼</i></button>
+            <div class="faq-answer">The exam duration is 2 hours.</div>
+        </div>
+
+        <!-- Miscellaneous FAQs -->
+        <div class="faq-item" data-category="misc">
+            <button class="faq-question" onclick="toggleFAQ(this)">📺 Can I prepare for CAT with just YouTube? <i>▼</i></button>
+            <div class="faq-answer">YouTube has good content, but structured coaching gives better direction.</div>
+        </div>
+
+        <div class="faq-item" data-category="misc">
+            <button class="faq-question" onclick="toggleFAQ(this)">💼 Do I need work experience for CAT? <i>▼</i></button>
+            <div class="faq-answer">No, work experience is not mandatory.</div>
+        </div>
+
+        <div class="faq-item" data-category="misc">
+            <button class="faq-question" onclick="toggleFAQ(this)">🏆 What is a good CAT percentile? <i>▼</i></button>
+            <div class="faq-answer">A 99+ percentile is considered excellent.</div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleFAQ(button) {
+            let answer = button.nextElementSibling;
+            let icon = button.querySelector("i");
+
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+                icon.textContent = "▼";
+            } else {
+                answer.style.display = "block";
+                icon.textContent = "▲";
+            }
+        }
+
+        function showFAQ(category) {
+            let items = document.querySelectorAll(".faq-item");
+            let tabs = document.querySelectorAll(".faq-tab");
+
+            tabs.forEach(tab => tab.classList.remove("active"));
+            document.querySelector(`[onclick="showFAQ('${category}')"]`).classList.add("active");
+
+            items.forEach(item => {
+                if (category === "all" || item.getAttribute("data-category") === category) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>AB Classes CAT Results &amp; Enquiry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+    .progress-fill {
+      animation: fillBar 1.5s ease-in-out forwards;
+    }
+    @keyframes fillBar {
+      from {
+        width: 0%;
+      }
+      to {
+        width: var(--fill);
+      }
+    }
+  </style>
+ </head>
+ <body class="bg-white text-[#ff0000] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50 border-b border-gray-200" role="banner">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4 md:p-6">
+     <span class="text-3xl font-extrabold text-red-600 tracking-wide select-none">
+      AB Classes
+     </span>
+     <nav aria-label="Primary Navigation" class="hidden md:flex space-x-10 font-semibold text-gray-700 tracking-wide" role="navigation">
+      <a class="hover:text-red-600 transition duration-300 ease-in-out" href="index.html">
+       Home
+      </a>
+      <a class="hover:text-red-600 transition duration-300 ease-in-out" href="cd.html">
+       Courses
+      </a>
+      <a class="hover:text-red-600 transition duration-300 ease-in-out" href="about.html">
+       Why Choose Us
+      </a>
+      <a class="hover:text-red-600 transition duration-300 ease-in-out" href="#contact">
+       Contact
+      </a>
+     </nav>
+     <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu" class="md:hidden text-gray-700 hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 rounded" id="mobile-menu-button">
+      <i class="fas fa-bars fa-lg">
+      </i>
+     </button>
+    </div>
+    <nav aria-label="Mobile menu" class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+     <a class="block px-6 py-3 border-b border-gray-200 hover:bg-red-50 hover:text-red-600 font-semibold transition" href="index.html">
+      Home
+     </a>
+     <a class="block px-6 py-3 border-b border-gray-200 hover:bg-red-50 hover:text-red-600 font-semibold transition" href="cd.html">
+      Courses
+     </a>
+     <a class="block px-6 py-3 border-b border-gray-200 hover:bg-red-50 hover:text-red-600 font-semibold transition" href="#why-choose-title">
+      Why Choose Us
+     </a>
+     <a class="block px-6 py-3 hover:bg-red-50 hover:text-red-600 font-semibold transition" href="#contact">
+      Contact
+     </a>
+    </nav>
+   </header>
+
+   
+  <!-- Hero Section -->
+  <section
+    class="relative bg-white py-20 px-6 flex flex-col md:flex-row items-center max-w-7xl mx-auto gap-12"
+  >
+   <div class="md:w-1/2 text-center md:text-left">
+    <h1 class="text-5xl font-extrabold text-[#ff0000] leading-tight mb-6">
+     CAT 2024 Results &amp; Success Stories
+    </h1>
+    <p class="text-xl text-[#660000] max-w-xl mx-auto md:mx-0 mb-8">
+     Congratulations to all our students who have achieved outstanding results!
+     Explore the success stories and get inspired to start your own CAT journey
+     with AB Classes.
+    </p>
+    <a
+      aria-label="Enquire about AB Classes on WhatsApp"
+      class="inline-block bg-[#ff0000] text-white font-bold px-10 py-4 rounded hover:bg-[#cc0000] transition shadow-lg"
+      href="https://api.whatsapp.com/send?phone=919827118488&amp;text=I%20want%20to%20enquire%20about%20AB%20Classes"
+      rel="noopener"
+      target="_blank"
+    >
+     Enquire Now on WhatsApp
+     <i class="fab fa-whatsapp ml-3"></i>
+    </a>
+   </div>
+   <div class="md:w-1/2 max-w-md mx-auto">
+    <div class="w-full max-w-md p-8 border border-gray-200 rounded-3xl shadow-2xl bg-white space-y-8">
+      <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-6">Performance Dashboard</h2>
+
+      <!-- Card 1 -->
+      <div class="flex items-center gap-4 p-4 border rounded-xl shadow-sm bg-gradient-to-r from-red-600 to-red-400 text-white">
+        <div class="text-4xl"><i class="fas fa-chart-line"></i></div>
+        <div class="flex-1">
+          <div class="text-sm uppercase tracking-wide">Selections</div>
+          <div class="text-2xl font-bold">99%ile+</div>
+          <div class="w-full bg-white/30 h-2 rounded-full mt-2 overflow-hidden">
+            <div class="h-2 bg-white rounded-full progress-fill" style="--fill: 99%; width: 99%"></div>
+          </div>
+        </div>
+        <div class="text-right font-semibold text-lg">50+</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex items-center gap-4 p-4 border rounded-xl shadow-sm bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
+        <div class="text-4xl"><i class="fas fa-user-graduate"></i></div>
+        <div class="flex-1">
+          <div class="text-sm uppercase tracking-wide">Student Satisfaction</div>
+          <div class="text-2xl font-bold">97%</div>
+          <div class="w-full bg-white/30 h-2 rounded-full mt-2 overflow-hidden">
+            <div class="h-2 bg-white rounded-full progress-fill" style="--fill: 97%; width: 97%"></div>
+          </div>
+        </div>
+        <div class="text-right font-semibold text-lg">900+</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex items-center gap-4 p-4 border rounded-xl shadow-sm bg-gradient-to-r from-green-600 to-green-400 text-white">
+        <div class="text-4xl"><i class="fas fa-users"></i></div>
+        <div class="flex-1">
+          <div class="text-sm uppercase tracking-wide">Community Growth</div>
+          <div class="text-2xl font-bold">95%</div>
+          <div class="w-full bg-white/30 h-2 rounded-full mt-2 overflow-hidden">
+            <div class="h-2 bg-white rounded-full progress-fill" style="--fill: 95%; width: 95%"></div>
+          </div>
+        </div>
+        <div class="text-right font-semibold text-lg">1500+</div>
+      </div>
+    </div>
+   </div>
+  </section>
+
+  <!-- Results Grid Section 2024 and 2023 with tabs below -->
+  <section class="py-12 px-6 bg-white flex-grow max-w-7xl mx-auto">
+   <h2
+     class="text-3xl font-bold text-[#ff0000] text-center mb-6 max-w-4xl mx-auto"
+   >
+    Top Scorers &amp; Their CAT Percentiles - 2024
+   </h2>
+
+   <!-- Year Tabs Section below the heading -->
+   <div class="flex justify-center space-x-6 border-b border-[#ff0000] mb-12">
+      <button id="tab-2024" class="pb-3 text-[#ff0000] border-b-4 border-[#ff0000] font-bold text-lg focus:outline-none" aria-selected="true" aria-controls="panel-2024" role="tab" type="button">2024</button>
+      <button id="tab-2023" class="pb-3 text-[#ff0000]/70 hover:text-[#ff0000] border-b-4 border-transparent font-bold text-lg focus:outline-none" aria-selected="false" aria-controls="panel-2023" role="tab" type="button">2023</button>
+    </div>
+
+   <div
+     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
+     role="tabpanel"
+     id="panel-2024"
+     aria-labelledby="tab-2024"
+   >
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Chahak Kedia</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">99.76<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "AB CLASSES provided the perfect strategy and resources to push my percentile beyond expectations. The mentorship here is truly game-changing!"
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Achintya Jain</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">99.64<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "From structured content to personalized doubt-solving, every aspect of preparation was spot on. AB CLASSES was the key to my success."
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Shivansh Patle</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">99.44<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "Thanks to AB CLASSES, I could balance my college and CAT prep with ease. Their mock analysis tools are the best!"
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Kritika Yadav</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">99.31<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "The constant motivation and timely feedback from mentors kept me on track. AB CLASSES made all the difference."
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Aditya Agrawal</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">98.93<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "Concept clarity and consistent support helped me stay confident throughout. I owe a lot to AB CLASSES!"
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Adarsh Sharma</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">98.63<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "Each session brought me closer to my goal. The dedication of the faculty at AB CLASSES is unmatched."
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Priyanshu</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">97.70<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "AB CLASSES helped me convert my potential into results. Their structured plan worked wonders for me."
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Abhisht Pandey</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">97.54<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "I couldn’t have asked for a better prep partner. AB CLASSES simplified even the toughest sections for me."
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Shreeyansh Sharma</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">97.42<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "With every mock test and review, I saw real improvement. AB CLASSES helped me stay focused and efficient."
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Ritwick Mandal</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">97.42<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "Their flexible learning schedule helped me plan better. The mentorship made me feel personally guided."
+     </p>
+    </div>
+    <div class="bg-[#ffe6e6] rounded-lg shadow-lg border border-[#ff0000] p-6 flex flex-col items-center text-center">
+     <div class="text-[#ff0000] text-6xl mb-6">
+      <i class="fas fa-trophy"></i>
+     </div>
+     <h3 class="text-2xl font-extrabold text-[#ff0000] mb-2">Vanshika Singhal</h3>
+     <p class="text-[#660000] font-bold text-lg mb-4">97.03<sup>th</sup> Percentile</p>
+     <p class="text-[#660000] italic leading-relaxed text-base max-w-[280px]">
+      "Joining AB CLASSES was the best decision. The learning environment is truly supportive and inspiring."
+     </p>
+    </div>
+   </div>
+    
+   <section
+     class="py-12 px-6 bg-yellow-50 flex-grow max-w-7xl mx-auto hidden"
+     role="tabpanel"
+     id="panel-2023"
+     aria-labelledby="tab-2023"
+     tabindex="0"
+   >
+    <h2
+      class="text-3xl font-extrabold text-yellow-700 text-center mb-12 max-w-4xl mx-auto"
+    >
+     Top Scorers &amp; Their CAT Percentiles - 2023
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
+    >
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Shubh Kela</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">99.82<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "AB CLASSES gave me the clarity and discipline I needed to reach 99.82 percentile. The mentors kept me constantly focused."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Bhavesh Chandwani</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">98.95<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "From smart strategies to timely feedback, everything was aligned for success at AB CLASSES."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Chahak Kedia</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">99.76<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "I cracked CAT with confidence, thanks to the structured learning and personal attention at AB CLASSES."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Abhi Agrawal</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">99.50<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "What worked for me was AB CLASSES’ consistent support and precise material. A game-changer!"
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Rohan Verma</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">99.27<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "Scoring 99.27 was possible because of the rigorous mocks and detailed analysis provided here."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Ashrut Sharma</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">99.10<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "AB CLASSES helped me push my limits and refine my performance with every mock."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Krishna Agrawal</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">98.85<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "It wasn’t just about studying — it was about learning the right way. AB CLASSES nailed that!"
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Anshul Laddha</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">98.70<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "A fantastic team of mentors and top-tier study plans—AB CLASSES made my dream percentile possible."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Rahul Agrawal</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">98.50<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "What I loved most was the logical approach to every section and the personal mentorship."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Anushk Hansraj</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">98.30<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "AB CLASSES helped me channel my efforts in the right direction. Their mock strategy is brilliant."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Priyansh Sharma</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">98.10<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "Mock tests, analysis, and personal feedback sessions—AB CLASSES gave me the complete package."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Mani Bhushan</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">97.90<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "With a strong foundation and continuous mentorship, AB CLASSES helped me stay on top of my prep."
+      </p>
+     </div>
+     <div class="bg-yellow-100 rounded-lg shadow-lg border border-yellow-400 p-6 flex flex-col items-center text-center">
+      <div class="text-yellow-600 text-6xl mb-6">
+       <i class="fas fa-trophy"></i>
+      </div>
+      <h3 class="text-2xl font-extrabold text-yellow-700 mb-2">Sagarika Shukla</h3>
+      <p class="text-yellow-700 font-bold text-lg mb-4">97.75<sup>th</sup> Percentile</p>
+      <p class="text-yellow-700 italic leading-relaxed text-base max-w-[280px]">
+       "From building basics to acing mocks, every step at AB CLASSES was a step toward success."
+      </p>
+     </div>
+    </div>
+   </section>
+  </section>
+
+  
+
+  <div style="background-color: #FF0000; padding: 20px; text-align: center;">
+    <span style="white-space: nowrap; color: white; font-size: 28px; font-weight: 800;">
+      Hear From Our Students
+    </span>
+  </div>
+  <iframe src="testimonial.html" class="w-full" style="height: 1000px; border: none;"></iframe>
+
+  
+  
+  <!-- Footer -->
+  <footer class="bg-[#ff0000] flex-shrink-0 p-12 text-white w-full">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between md:items-start gap-12">
+     <div class="flex flex-col space-y-4 md:w-1/3">
+      <h3 class="text-xl font-bold border-b border-white pb-2">AB Classes</h3>
+      <p class="text-sm text-white/90">
+       AB Classes is your trusted partner for CAT preparation, delivering
+       top-notch coaching and success stories year after year.
+      </p>
+      <div class="flex space-x-4 mt-2">
+       <a
+         href="https://api.whatsapp.com/send?phone=919827118488&text=I%20want%20to%20enquire%20about%20AB%20Classes"
+         target="_blank"
+         rel="noopener"
+         aria-label="Facebook"
+         class="hover:text-white/80 transition"
+         ><i class="fab fa-facebook fa-lg"></i
+       ></a>
+       <a
+         href="https://twitter.com/abclasses"
+         target="_blank"
+         rel="noopener"
+         aria-label="Twitter"
+         class="hover:text-white/80 transition"
+         ><i class="fab fa-twitter fa-lg"></i
+       ></a>
+       <a
+         href="https://www.instagram.com/cat_abclasses/"
+         target="_blank"
+         rel="noopener"
+         aria-label="Instagram"
+         class="hover:text-white/80 transition"
+         ><i class="fab fa-instagram fa-lg"></i
+       ></a>
+       <a
+         href="https://www.linkedin.com/company/abclasses"
+         target="_blank"
+         rel="noopener"
+         aria-label="LinkedIn"
+         class="hover:text-white/80 transition"
+         ><i class="fab fa-linkedin fa-lg"></i
+       ></a>
+      </div>
+     </div>
+     <div class="flex flex-col space-y-4 md:w-1/3">
+      <h3 class="text-xl font-bold border-b border-white pb-2">Quick Links</h3>
+      <nav class="flex flex-col space-y-2 text-white/90">
+       <a
+         href=""
+         class="hover:text-white/80 transition"
+         >Home</a
+       >
+       <a href="results.html"
+         class="hover:text-white/80 transition"
+         >Results</a
+       >
+       <a href="cd.html"
+         class="hover:text-white/80 transition"
+         >Courses</a
+       >
+       <a href="https://api.whatsapp.com/send?phone=919827118488&text=I%20want%20to%20enquire%20about%20AB%20Classes" class="hover:text-white/80 transition"
+         >Contact</a
+       >
+      </nav>
+     </div>
+     <div class="flex flex-col space-y-4 md:w-1/3">
+      <h3 class="text-xl font-bold border-b border-white pb-2">Contact Us</h3>
+      <address class="not-italic text-white/90 space-y-2">
+       <p>AB Classes Pvt. Ltd.</p>
+       <p> Agrasen Chowk, Raipur, Chhattisgarh 492001</p>
+       <p>Phone: <a href="tel:+919827118488" class="hover:text-white/80">+91 98271 18488</a></p>
+       <p>Email: <a href="mailto:info@abclasses.in" class="hover:text-white/80">info@abclasses.in</a></p>
+      </address>
+     </div>
+    </div>
+   </footer>
+
+
+  <script>
+    const tab2024 = document.getElementById('tab-2024');
+    const tab2023 = document.getElementById('tab-2023');
+    const panel2024 = document.getElementById('panel-2024');
+    const panel2023 = document.getElementById('panel-2023');
+
+    tab2024.addEventListener('click', () => {
+      tab2024.classList.add('border-b-4', 'border-[#ff0000]', 'text-[#ff0000]');
+      tab2024.setAttribute('aria-selected', 'true');
+      tab2023.classList.remove('border-b-4', 'border-[#ff0000]', 'text-[#ff0000]');
+      tab2023.classList.add('text-[#ff0000]/70');
+      tab2023.setAttribute('aria-selected', 'false');
+      panel2024.classList.remove('hidden');
+      panel2023.classList.add('hidden');
+    });
+
+    tab2023.addEventListener('click', () => {
+      tab2023.classList.add('border-b-4', 'border-[#ff0000]', 'text-[#ff0000]');
+      tab2023.setAttribute('aria-selected', 'true');
+      tab2024.classList.remove('border-b-4', 'border-[#ff0000]', 'text-[#ff0000]');
+      tab2024.classList.add('text-[#ff0000]/70');
+      tab2024.setAttribute('aria-selected', 'false');
+      panel2023.classList.remove('hidden');
+      panel2024.classList.add('hidden');
+    });
+  </script>
+ </body>
+</html>
