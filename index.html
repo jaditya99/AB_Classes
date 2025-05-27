@@ -178,6 +178,73 @@
                 height: 320px !important; /* Adjusted height to fit data.html's mobile content */
             }
 
+            /* Styles for the hero image r3.jpg to cover more width on mobile */
+            .main-container > .image-container { /* Targets the container of r3.jpg */
+                width: 100vw !important;
+                max-width: 100vw !important; /* Explicitly allow full viewport width */
+                position: relative !important;
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+                border-radius: 0 !important; /* Remove border-radius from the container */
+            }
+            /* Ensure the image inside also loses its border-radius */
+            .main-container > .image-container .carousel img {
+                border-radius: 0 !important;
+            }
+
+            /* --- FAQ Section Mobile Styles --- */
+            /* Adjust padding for the main FAQ container on mobile */
+            #faq-section-main-container {
+                padding: 20px 15px !important; /* Reduced horizontal padding */
+            }
+
+            /* Smaller font size for the main FAQ title on mobile */
+            #faq-section-main-container h2 {
+                font-size: 24px !important;
+                margin-bottom: 8px !important;
+            }
+
+            /* Smaller font size for the FAQ subtitle on mobile */
+            #faq-section-main-container > p {
+                font-size: 14px !important;
+                margin-bottom: 20px !important;
+            }
+
+            /* Style the tabs container for vertical stacking on mobile */
+            #faq-tabs-container-mobile {
+                flex-direction: column !important; /* Stack tabs vertically */
+                align-items: stretch !important; /* Make tabs take full width */
+                gap: 0 !important; /* Remove gap between stacked items */
+                border-bottom: none !important; /* Remove the bottom border from the container */
+                margin-bottom: 15px !important;
+            }
+
+            /* Style individual FAQ tabs for mobile */
+            #faq-tabs-container-mobile .faq-tab {
+                text-align: left !important; /* Align text to the left */
+                padding: 15px 10px !important; /* Increase vertical padding for touch targets */
+                border-bottom: 1px solid #eee !important; /* Add a subtle border between tabs */
+                font-size: 16px !important;
+                margin: 0 !important; /* Remove any default margins */
+                background-color: #fff !important; /* Ensure background is white */
+                transition: background-color 0.3s ease !important; /* Smooth transition for hover/active */
+            }
+
+            /* Remove bottom border from the last tab */
+            #faq-tabs-container-mobile .faq-tab:last-child {
+                border-bottom: none !important;
+            }
+
+            /* Style the active tab */
+            #faq-tabs-container-mobile .faq-tab.active {
+                background-color: #f9f9f9 !important; /* Light background for active tab */
+                color: red !important; /* Keep text color red */
+                font-weight: bold !important;
+            }
+
+            /* Adjust font sizes for FAQ questions and answers on mobile */
+            #faq-list .faq-item button { font-size: 15px !important; padding: 10px 0 !important; } /* Adjusted padding */
+            #faq-list .faq-item .faq-answer { font-size: 14px !important; padding-top: 8px !important; } /* Adjusted padding */
         }
 
         @media (max-width: 480px) {
@@ -219,6 +286,11 @@
             .carousel img {
                 height: 100% !important;
                 object-fit: contain !important;
+            }
+            /* Desktop styles for the self-paced course box */
+            #self-paced-course-box {
+                padding-bottom: 40px !important;
+                margin-bottom: 0px !important;
             }
         }
 
@@ -604,7 +676,7 @@
     </div>
     
     <!-- Box 3 -->
-    <div style="background-color: #ffffff; border: 2px solid black; border-radius: 10px; padding: 40px; text-align: center; min-height: 500px; width: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
+    <div id="self-paced-course-box" style="background-color: #ffffff; border: 2px solid black; border-radius: 10px; padding-top: 40px; padding-right: 40px; padding-bottom: 60px; padding-left: 40px; margin-bottom: 20px; text-align: center; min-height: 500px; width: 100%; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box;">
         <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px;">CAT 2025 SELF-PACED COURSE</h2>
         
         <hr style="border: 1px solid black; width: 100%; margin: 0;">
@@ -621,9 +693,9 @@
     </div>
 
 </div>
-<iframe src="course_details.html" class="w-full mt-10" style="height: 1000px; border: none;"></iframe>
+<iframe src="course_details.html" class="w-full mt-10 hidden sm:block" style="height: 1000px; border: none;"></iframe>
 <!-- Heading with red background -->
-<div style="background-color: #ff0000; width: 100%; padding: 20px 10px; text-align: center;">
+<div style="background-color: #ff0000; width: 100%; padding-top: 30px; padding-right: 10px; padding-bottom: 20px; padding-left: 10px; text-align: center;" class="mt-6 sm:mt-0">
     <h2 style="color: white; font-size: 24px; font-weight: bold; margin: 0;">Inside Look: CAT 2023 Solved Paper</h2>
 </div>
 
@@ -773,11 +845,11 @@
 
 <!-- FAQ Section -->
 
-<div style="width: 100%; padding: 40px 15%;">
+<div id="faq-section-main-container" style="width: 100%; padding: 40px 15%;">
     <h2 style="text-align: center; font-size: 32px; font-weight: bold; margin-bottom: 10px;">Frequently Asked Questions</h2>
     <p style="text-align: center; font-size: 16px; color: #666; margin-bottom: 30px;">Journey Of A Thousand Miles Begins With A Single Step</p>
 
-    <div style="display: flex; justify-content: center; gap: 30px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
+    <div id="faq-tabs-container-mobile" style="display: flex; justify-content: center; gap: 30px; border-bottom: 2px solid #ddd; margin-bottom: 20px;">
         <span class="faq-tab active" onclick="showFAQ('all')" style="font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px; color: red;">All</span>
         <span class="faq-tab" onclick="showFAQ('course')" style="font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px;">About the CAT Online Course</span>
         <span class="faq-tab" onclick="showFAQ('exam')" style="font-size: 16px; font-weight: bold; cursor: pointer; padding: 10px;">About CAT Exam</span>
@@ -815,26 +887,87 @@
         </div>
 
     </div>
-
     <script>
+        let currentlyDisplayedCategory = null; // Tracks which category's questions are shown
+
         function toggleFAQ(button) {
             let answer = button.nextElementSibling;
             let icon = button.querySelector("i");
             answer.style.display = answer.style.display === "block" ? "none" : "block";
             icon.textContent = answer.style.display === "block" ? "▲" : "▼";
         }
+        function showFAQ(clickedCategory) {
+            const items = document.querySelectorAll("#faq-list .faq-item");
+            const tabs = document.querySelectorAll(".faq-tab");
 
-        function showFAQ(category) {
-            let items = document.querySelectorAll(".faq-item");
-            let tabs = document.querySelectorAll(".faq-tab");
-
-            tabs.forEach(tab => tab.style.color = "");
-            document.querySelector(`[onclick="showFAQ('${category}')"]`).style.color = "red";
-
-            items.forEach(item => {
-                item.style.display = (category === "all" || item.getAttribute("data-category") === category) ? "block" : "none";
+            // Deactivate all tabs first (visually)
+            tabs.forEach(tab => {
+                tab.style.color = ""; // Reset color
+                tab.classList.remove('active'); // Remove active class for underline
             });
+
+            // If the clicked category is the one currently displayed, hide its items and set no category as active
+            if (clickedCategory === currentlyDisplayedCategory) {
+                items.forEach(item => {
+                    // Hide all items that were part of the clickedCategory
+                    if (clickedCategory === "all" || item.getAttribute("data-category") === clickedCategory) {
+                        item.style.display = "none";
+                        // Also ensure its answer is closed
+                        const answer = item.querySelector(".faq-answer");
+                        const icon = item.querySelector("button i");
+                        if (answer && answer.style.display === "block") {
+                            answer.style.display = "none";
+                            if (icon) icon.textContent = "▼";
+                        }
+                    }
+                });
+                currentlyDisplayedCategory = null; // No category is actively displayed
+            } else {
+                // A new category is selected, or a category is selected when none were active
+
+                // First, hide all items and close any open answers
+                items.forEach(item => {
+                    item.style.display = "none";
+                    const answer = item.querySelector(".faq-answer");
+                    const icon = item.querySelector("button i");
+                    if (answer && answer.style.display === "block") {
+                        answer.style.display = "none";
+                        if (icon) icon.textContent = "▼";
+                    }
+                });
+
+                // Show items for the newly clicked category
+                items.forEach(item => {
+                    if (clickedCategory === "all" || item.getAttribute("data-category") === clickedCategory) {
+                        item.style.display = "block";
+                    }
+                });
+
+                // Activate the clicked tab (visually)
+                const activeTab = document.querySelector(`.faq-tab[onclick="showFAQ('${clickedCategory}')"]`);
+                if (activeTab) {
+                    activeTab.style.color = "red";
+                    activeTab.classList.add('active'); // Add active class for underline
+                }
+                currentlyDisplayedCategory = clickedCategory;
+            }
         }
+
+        // Initial setup on DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hide all FAQ items initially
+            document.querySelectorAll('#faq-list .faq-item').forEach(item => {
+                item.style.display = 'none';
+            });
+
+            // Ensure no tab is visually active on load
+            const allTabs = document.querySelectorAll('.faq-tab');
+            allTabs.forEach(tab => {
+                tab.style.color = ""; // Reset color
+                tab.classList.remove('active'); // Remove active class
+            });
+            // currentlyDisplayedCategory is already null by declaration, so no questions will be shown.
+        });
     </script>
 </div>
 
