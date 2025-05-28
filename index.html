@@ -10,12 +10,14 @@
 
     <style>
         /* General Styling */
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        body {
             font-family: 'Arial', sans-serif;
             background-color: #ffffff;
-            overflow-x: hidden;
         }
 
         /* Responsive Media Queries */
@@ -245,6 +247,12 @@
             /* Adjust font sizes for FAQ questions and answers on mobile */
             #faq-list .faq-item button { font-size: 15px !important; padding: 10px 0 !important; } /* Adjusted padding */
             #faq-list .faq-item .faq-answer { font-size: 14px !important; padding-top: 8px !important; } /* Adjusted padding */
+        }
+        /* Hide testimonial.html iframe on mobile */
+        @media (max-width: 768px) {
+            iframe[src="testimonial.html"] {
+                display: none !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -521,11 +529,13 @@
           Why AB CLASSES is the Right Choice For Cat – Hear From Rankers!
         </span>
       </div>
+     
       <iframe 
       src="testimonial.html" 
-      class="w-full block" 
-      style="height: 100vh; margin: 0; padding-top: 100px; border: none; display: block; overflow: hidden;">
+      class="w-full block hidden md:block" 
+      style="height: 100vh; margin: 0; padding-top: 100px; border: none; overflow: hidden;">
     </iframe>
+    
     
     
       
